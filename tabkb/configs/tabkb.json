@@ -1,0 +1,54 @@
+{
+  "name": "tabkb",
+  "vendorId": "0x5448",
+  "productId": "0x4842",
+  "firmware": "0.0.0",
+  "firmwareFile": "",
+  "matrixLighting": {
+    "rows": 7,
+    "cols": 7
+  },
+  "actuation": true,
+  "screen": {
+    "menus": ["video", "image", "slider"],
+    "multiple": false,
+    "fileTypes": [
+      {
+        "tips": "屏幕动画 Area1",
+        "type": "video",
+        "format": "ANIM",
+        "oextension": "ani",
+        "orientations": 0,
+        "owidth": 80,
+        "oheight": 30
+      },
+      {
+        "tips": "屏幕动画 Area2",
+        "type": "video",
+        "format": "ANIM",
+        "oextension": "ani",
+        "orientations": 0,
+        "owidth": 80,
+        "oheight": 112
+      },
+      {
+        "tips": "屏幕背景",
+        "type": "image",
+        "format": "ABKG",
+        "oextension": "bkg",
+        "orientations": 0,
+        "owidth": 80,
+        "oheight": 160
+      },
+      {
+        "tips": "屏幕状态",
+        "type": "image",
+        "format": "ASTS",
+        "oextension": "sts",
+        "orientations": 0,
+        "owidth": 96,
+        "oheight": 88
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "qk80v2",
+  "vendorId": "0x4F57",
+  "productId": "0x5002",
+  "firmware": "0.0.0",
+  "matrixLighting": {
+    "rows": 7,
+    "cols": 7
+  },
+  "screen": {
+    "menus": ["video"],
+    "multiple": false,
+    "fileTypes": [
+      {
+        "tips": "",
+        "type": "video",
+        "format": "ANIM",
+        "oextension": "ani",
+        "orientations": 0,
+        "owidth": 320,
+        "oheight": 172
+      }
+    ]
+  }
+}
