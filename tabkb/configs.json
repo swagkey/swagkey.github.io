@@ -93,6 +93,7 @@
         "slider"
       ],
       "multiple": false,
+      "fileFormat": 565,
       "fileTypes": [
         {
           "tips": "屏幕动画 Area1",
