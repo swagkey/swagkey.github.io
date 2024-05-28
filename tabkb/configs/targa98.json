@@ -1,0 +1,28 @@
+{
+  "name": "Targa 98",
+  "vendorId": "0x5546",
+  "productId": "0x5462",
+  "screen": {
+    "menus": ["video", "image", "slider"],
+    "swapBit": true,
+    "fileTypes": [
+      {
+        "tips": "",
+        "type": "video",
+        "format": "ANIM",
+        "orientations": 90,
+        "owidth": 112,
+        "oheight": 80,
+        "animFramesLimit": 512
+      },
+      {
+        "tips": "屏幕背景",
+        "type": "image",
+        "format": "ABKG",
+        "orientations": 90,
+        "owidth": 112,
+        "oheight": 80
+      }
+    ]
+  }
+}

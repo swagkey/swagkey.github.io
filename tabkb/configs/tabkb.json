@@ -2,6 +2,7 @@
   "name": "tabkb",
   "vendorId": "0x5448",
   "productId": "0x4842",
+  "cdc": false,
   "firmware": "0.0.0",
   "firmwareFile": "",
   "matrixLighting": {
@@ -11,14 +12,13 @@
   "actuation": true,
   "screen": {
     "menus": ["video", "image", "slider"],
-    "multiple": false,
-    "fileFormat": 565,
+    "swapBit": true,
+    "animFramesLimit": -1,
     "fileTypes": [
       {
         "tips": "屏幕动画 Area1",
         "type": "video",
         "format": "ANIM",
-        "oextension": "ani",
         "orientations": 0,
         "owidth": 80,
         "oheight": 30
@@ -27,7 +27,6 @@
         "tips": "屏幕动画 Area2",
         "type": "video",
         "format": "ANIM",
-        "oextension": "ani",
         "orientations": 0,
         "owidth": 80,
         "oheight": 112
@@ -36,7 +35,6 @@
         "tips": "屏幕背景",
         "type": "image",
         "format": "ABKG",
-        "oextension": "bkg",
         "orientations": 0,
         "owidth": 80,
         "oheight": 160
@@ -45,7 +43,6 @@
         "tips": "屏幕状态",
         "type": "image",
         "format": "ASTS",
-        "oextension": "sts",
         "orientations": 0,
         "owidth": 96,
         "oheight": 88

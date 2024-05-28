@@ -3,22 +3,31 @@
   "vendorId": "0x4F57",
   "productId": "0x5002",
   "firmware": "0.0.0",
+  "cdc": true,
   "matrixLighting": {
     "rows": 7,
     "cols": 7
   },
   "screen": {
     "menus": ["video"],
-    "multiple": false,
     "fileTypes": [
       {
-        "tips": "",
+        "tips": "动画",
         "type": "video",
         "format": "ANIM",
-        "oextension": "ani",
         "orientations": 0,
         "owidth": 320,
-        "oheight": 172
+        "oheight": 172,
+        "animFramesLimit": 600
+      },
+      {
+        "tips": "主题",
+        "type": "video",
+        "format": "ANIT",
+        "orientations": 0,
+        "owidth": 320,
+        "oheight": 172,
+        "animFramesLimit": 200
       }
     ]
   }

@@ -9,12 +9,12 @@
     "vendorId": "0x4A4F",
     "productId": "0x4D64",
     "firmware": "0.0.0",
+    "cdc": true,
     "screen": [
       {
         "tips": "屏幕动画 Area1",
         "type": "video",
         "format": "ANIM",
-        "oextension": "ani",
         "orientations": 0,
         "owidth": 80,
         "oheight": 30
@@ -23,7 +23,6 @@
         "tips": "屏幕动画 Area2",
         "type": "video",
         "format": "ANIM",
-        "oextension": "ani",
         "orientations": 0,
         "owidth": 80,
         "oheight": 112
@@ -32,7 +31,6 @@
         "tips": "屏幕背景",
         "type": "image",
         "format": "ABKG",
-        "oextension": "bkg",
         "orientations": 0,
         "owidth": 80,
         "oheight": 160
@@ -41,7 +39,6 @@
         "tips": "屏幕状态",
         "type": "image",
         "format": "ASTS",
-        "oextension": "sts",
         "orientations": 0,
         "owidth": 96,
         "oheight": 88
@@ -53,6 +50,7 @@
     "vendorId": "0x4F57",
     "productId": "0x5002",
     "firmware": "0.0.0",
+    "cdc": true,
     "matrixLighting": {
       "rows": 7,
       "cols": 7
@@ -61,16 +59,24 @@
       "menus": [
         "video"
       ],
-      "multiple": false,
       "fileTypes": [
         {
-          "tips": "",
+          "tips": "动画",
           "type": "video",
           "format": "ANIM",
-          "oextension": "ani",
           "orientations": 0,
           "owidth": 320,
-          "oheight": 172
+          "oheight": 172,
+          "animFramesLimit": 600
+        },
+        {
+          "tips": "主题",
+          "type": "video",
+          "format": "ANIT",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": 200
         }
       ]
     }
@@ -79,6 +85,7 @@
     "name": "tabkb",
     "vendorId": "0x5448",
     "productId": "0x4842",
+    "cdc": false,
     "firmware": "0.0.0",
     "firmwareFile": "",
     "matrixLighting": {
@@ -92,14 +99,13 @@
         "image",
         "slider"
       ],
-      "multiple": false,
-      "fileFormat": 565,
+      "swapBit": true,
+      "animFramesLimit": -1,
       "fileTypes": [
         {
           "tips": "屏幕动画 Area1",
           "type": "video",
           "format": "ANIM",
-          "oextension": "ani",
           "orientations": 0,
           "owidth": 80,
           "oheight": 30
@@ -108,7 +114,6 @@
           "tips": "屏幕动画 Area2",
           "type": "video",
           "format": "ANIM",
-          "oextension": "ani",
           "orientations": 0,
           "owidth": 80,
           "oheight": 112
@@ -117,7 +122,6 @@
           "tips": "屏幕背景",
           "type": "image",
           "format": "ABKG",
-          "oextension": "bkg",
           "orientations": 0,
           "owidth": 80,
           "oheight": 160
@@ -126,12 +130,49 @@
           "tips": "屏幕状态",
           "type": "image",
           "format": "ASTS",
-          "oextension": "sts",
           "orientations": 0,
           "owidth": 96,
           "oheight": 88
         }
       ]
     }
+  },
+  {
+    "name": "Targa 98",
+    "vendorId": "0x5546",
+    "productId": "0x5462",
+    "screen": {
+      "menus": [
+        "video",
+        "image",
+        "slider"
+      ],
+      "swapBit": true,
+      "fileTypes": [
+        {
+          "tips": "",
+          "type": "video",
+          "format": "ANIM",
+          "orientations": 90,
+          "owidth": 112,
+          "oheight": 80,
+          "animFramesLimit": 512
+        },
+        {
+          "tips": "屏幕背景",
+          "type": "image",
+          "format": "ABKG",
+          "orientations": 90,
+          "owidth": 112,
+          "oheight": 80
+        }
+      ]
+    }
+  },
+  {
+    "name": "OW link65ec",
+    "vendorId": "0x4F57",
+    "productId": "0x4C4B",
+    "actuation": true
   }
 ]
