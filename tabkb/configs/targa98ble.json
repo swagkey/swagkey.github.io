@@ -1,7 +1,7 @@
 {
   "name": "Targa 98",
   "vendorId": "0x5546",
-  "productId": "0x5462",
+  "productId": "0x5463",
   "screen": {
     "menus": ["video", "image", "slider"],
     "swapBit": true,

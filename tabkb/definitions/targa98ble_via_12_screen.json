@@ -1,13 +1,14 @@
 {
-	"name": "Targa 98",
+	"name": "Targa 98 Ble",
 	"vendorId": "0x5546",
-	"productId": "0x5462",
+	"productId": "0x5463",
 	"matrix": {
 		"rows": 12,
 		"cols": 10
 	},
     "keycodes": ["qmk_lighting"],
     "menus": [
+        "qmk_rgblight",
         {
             "label": "Config",
             "content": [
@@ -36,7 +37,81 @@
                         }
                     ]
                 },
-				{
+                {
+                    "label": "Features",
+                    "content": [
+                        {
+                            "label": "High speed / \u9ad8\u901f\u5237\u65b0\u6e38\u620f\u6a21\u5f0f\uff08\u975eUSB\u8fde\u63a5\u614e\u7528\uff09",
+                            "type": "toggle",
+                            "content": ["id_cp_high_speed_mode", 17, 3]
+                        },
+                        {
+                            "label": "Sleep mode / \u4f11\u7720\u65f6\u95f4\u6a21\u5f0f",
+                            "type": "dropdown",
+                            "options": [
+                                ["Disable", 0],
+                                ["5 minutes", 1],
+                                ["15 minutes", 2],
+                                ["30 minutes", 3],
+                                ["1 hour", 4],
+                                ["3 hours", 5],
+                                ["6 hours", 6]
+                              ],
+                            "content": ["id_cp_sleep_mode", 17, 2]
+                        },
+                        {
+                            "label": "Sleep power saving / \u7701\u7535\u6a21\u5f0f",
+                            "type": "toggle",
+                            "content": ["id_cp_power_save", 17, 5]
+                        }
+                    ]
+                },
+                {
+                    "label": "Connect",
+                    "content":[
+                        {
+                            "label": "Connect Mode / \u8fde\u63a5\u6a21\u5f0f",
+                            "type": "dropdown",
+                            "options": [
+                                ["USB", 0],
+                                ["Wireless 2.4G \u65e0\u7ebf 2.4G", 1],
+                                ["Bluetooth G1 \u84dd\u7259\u8bbe\u5907 1", 2],
+                                ["Bluetooth G2 \u84dd\u7259\u8bbe\u5907 2", 3],
+                                ["Bluetooth G3 \u84dd\u7259\u8bbe\u5907 3", 4]
+                              ],
+                            "content": ["id_cp_connect_mode", 18, 1]
+                        },
+                        {
+                            "label": "Transmission Power / \u84dd\u7259\u53d1\u9001\u529f\u7387\uff08\u8d8a\u5927\u4fe1\u53f7\u8d8a\u597d\u8017\u7535\u8d8a\u591a\uff09",
+                            "type": "dropdown",
+                            "showIf": "{id_cp_connect_mode} > 0",
+                            "options": [
+                                ["Level 0", 0],
+                                ["Level 1", 1],
+                                ["Level 2", 2],
+                                ["Level 3", 3],
+                                ["Level 4", 4],
+                                ["Level 5", 5],
+                                ["Level 6", 6],
+                                ["Level 7", 7]
+                              ],
+                            "content": ["id_cp_ble_tx_mode", 18, 2]
+                        },
+                        {
+                            "label": "Delete current bound / \u5220\u9664\u5f53\u524d\u84dd\u7259\u914d\u5bf9",
+                            "type": "toggle",
+                            "showIf": "{id_cp_connect_mode} > 1",
+                            "content": ["id_cp_ble_clear_current", 18, 3]
+                        },
+                        {
+                            "label": "Delete all bounds / \u5220\u9664\u6240\u6709\u84dd\u7259\u914d\u5bf9",
+                            "type": "toggle",
+                            "showIf": "{id_cp_connect_mode} > 1",
+                            "content": ["id_cp_ble_clear_bounds", 18, 4]
+                        }
+                    ]
+                },
+                {
                     "label": "Screen",
                     "content": [
                         {

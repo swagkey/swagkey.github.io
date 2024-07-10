@@ -46,6 +46,12 @@
     ]
   },
   {
+    "name": "OW suit hal",
+    "vendorId": "0x4F57",
+    "productId": "0x5380",
+    "actuation": true
+  },
+  {
     "name": "qk80v2",
     "vendorId": "0x4F57",
     "productId": "0x5002",
@@ -100,7 +106,6 @@
         "slider"
       ],
       "swapBit": true,
-      "animFramesLimit": -1,
       "fileTypes": [
         {
           "tips": "屏幕动画 Area1",
@@ -108,7 +113,8 @@
           "format": "ANIM",
           "orientations": 0,
           "owidth": 80,
-          "oheight": 30
+          "oheight": 30,
+          "animFramesLimit": -1
         },
         {
           "tips": "屏幕动画 Area2",
@@ -116,7 +122,8 @@
           "format": "ANIM",
           "orientations": 0,
           "owidth": 80,
-          "oheight": 112
+          "oheight": 112,
+          "animFramesLimit": -1
         },
         {
           "tips": "屏幕背景",
@@ -154,7 +161,7 @@
           "type": "video",
           "format": "ANIM",
           "orientations": 90,
-          "owidth": 112,
+          "owidth": 160,
           "oheight": 80,
           "animFramesLimit": 512
         },
@@ -163,7 +170,39 @@
           "type": "image",
           "format": "ABKG",
           "orientations": 90,
-          "owidth": 112,
+          "owidth": 160,
+          "oheight": 80
+        }
+      ]
+    }
+  },
+  {
+    "name": "Targa 98",
+    "vendorId": "0x5546",
+    "productId": "0x5463",
+    "screen": {
+      "menus": [
+        "video",
+        "image",
+        "slider"
+      ],
+      "swapBit": true,
+      "fileTypes": [
+        {
+          "tips": "",
+          "type": "video",
+          "format": "ANIM",
+          "orientations": 90,
+          "owidth": 160,
+          "oheight": 80,
+          "animFramesLimit": 512
+        },
+        {
+          "tips": "屏幕背景",
+          "type": "image",
+          "format": "ABKG",
+          "orientations": 90,
+          "owidth": 160,
           "oheight": 80
         }
       ]
