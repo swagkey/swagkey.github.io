@@ -8,7 +8,7 @@
     "menus": ["video"],
     "fileTypes": [
       {
-        "tips": "动画",
+        "label": "动画",
         "type": "video",
         "format": "ANIM",
         "orientations": 0,

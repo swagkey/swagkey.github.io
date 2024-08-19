@@ -39,17 +39,18 @@
                     "label": "Features",
                     "content": [
                         {
-                            "label": "Debounce delay ms",
+                            "label": "Debounce mode",
                             "type": "dropdown",
                             "options": [
-                                ["1 ms", 1],
-                                ["2 ms", 2],
-                                ["3 ms", 3],
-                                ["4 ms", 4],
-                                ["5 ms", 5],
-                                ["6 ms", 6],
-                                ["7 ms", 7]
+                                ["Default", 0],
+                                ["Eager", 3]
                               ],
+                            "content": ["id_cp_debounce_mode", 17, 6]
+                        },
+                        {
+                            "label": "Debounce delay ms [1 - 31 ms]",
+                            "type": "range",
+                            "options": [1, 31],
                             "content": ["id_cp_debounce", 17, 7]
                         },
                         {
@@ -65,6 +66,69 @@
                                 ["1k", 31]
                               ],
                             "content": ["id_cp_matrix_frequency", 17, 8]
+                        }
+                    ]
+                },
+                {
+                    "label": "SnapTap",
+                    "content": [
+                        {
+                            "label": "SnapTap bind 1",
+                            "type": "toggle",
+                            "content": ["id_cp_socd_1_state", 23, 4]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_1_state} != 0",
+                            "label": "-- Bind 1 Key A",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_1_key_a", 23, 5]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_1_state} != 0",
+                            "label": "-- Bind 1 Key B",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_1_key_b", 23, 6]
+                        },
+                        {
+                            "label": "SnapTap bind 2",
+                            "type": "toggle",
+                            "content": ["id_cp_socd_2_state", 23, 7]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_2_state} != 0",
+                            "label": "-- Bind 2 Key A",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_2_key_a", 23, 8]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_2_state} != 0",
+                            "label": "-- Bind 2 Key B",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_2_key_b", 23, 9]
+                        }
+                    ]
+                },
+                {
+                    "label": "Alt Trig",
+                    "content": [
+                        {
+                            "label": "Alternating trigger",
+                            "type": "toggle",
+                            "content": ["id_cp_alt_trig_state", 23, 1]
+                        },
+                        {
+                            "showIf": "{id_cp_alt_trig_state} != 0",
+                            "label": "First trigger ms [1 - 500 ms, default: 50ms]",
+                            "type": "range",
+                            "options": [1, 500],
+                            "content": ["id_cp_alt_trig_start_ms", 23, 2]
+                        },
+                        {
+                            "showIf": "{id_cp_alt_trig_state} != 0",
+                            "label": "Repeat trigger ms [1 - 500 ms, default: 50ms]",
+                            "type": "range",
+                            "options": [1, 500],
+                            "content": ["id_cp_alt_trig_repeat_ms", 23, 3]
                         }
                     ]
                 },

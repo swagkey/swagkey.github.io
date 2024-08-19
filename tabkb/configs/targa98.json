@@ -7,7 +7,7 @@
     "swapBit": true,
     "fileTypes": [
       {
-        "tips": "",
+        "label": "",
         "type": "video",
         "format": "ANIM",
         "orientations": 90,
@@ -16,7 +16,7 @@
         "animFramesLimit": 512
       },
       {
-        "tips": "屏幕背景",
+        "label": "屏幕背景",
         "type": "image",
         "format": "ABKG",
         "orientations": 90,

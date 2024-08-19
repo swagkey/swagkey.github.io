@@ -5,7 +5,7 @@
   "cdc": true,
   "screen": [
     {
-      "tips": "屏幕动画 Area1",
+      "label": "屏幕动画 Area1",
       "type": "video",
       "format": "ANIM",
       "orientations": 0,
@@ -13,7 +13,7 @@
       "oheight": 30
     },
     {
-      "tips": "屏幕动画 Area2",
+      "label": "屏幕动画 Area2",
       "type": "video",
       "format": "ANIM",
       "orientations": 0,
@@ -21,7 +21,7 @@
       "oheight": 112
     },
     {
-      "tips": "屏幕背景",
+      "label": "屏幕背景",
       "type": "image",
       "format": "ABKG",
       "orientations": 0,
@@ -29,7 +29,7 @@
       "oheight": 160
     },
     {
-      "tips": "屏幕状态",
+      "label": "屏幕状态",
       "type": "image",
       "format": "ASTS",
       "orientations": 0,

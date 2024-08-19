@@ -1,12 +1,13 @@
 {
-  "name": "qk80v2",
-  "vendorId": "0x4F57",
-  "productId": "0x5002",
+  "name": "QK80 MK2",
+  "vendorId": "0x514B",
+  "productId": "0x4D02",
   "firmware": "0.0.0",
   "cdc": true,
   "matrixLighting": {
     "rows": 7,
-    "cols": 7
+    "cols": 7,
+    "cdc": true
   },
   "screen": {
     "menus": ["video"],

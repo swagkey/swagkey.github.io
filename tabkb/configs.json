@@ -12,7 +12,7 @@
     "cdc": true,
     "screen": [
       {
-        "tips": "屏幕动画 Area1",
+        "label": "屏幕动画 Area1",
         "type": "video",
         "format": "ANIM",
         "orientations": 0,
@@ -20,7 +20,7 @@
         "oheight": 30
       },
       {
-        "tips": "屏幕动画 Area2",
+        "label": "屏幕动画 Area2",
         "type": "video",
         "format": "ANIM",
         "orientations": 0,
@@ -28,7 +28,7 @@
         "oheight": 112
       },
       {
-        "tips": "屏幕背景",
+        "label": "屏幕背景",
         "type": "image",
         "format": "ABKG",
         "orientations": 0,
@@ -36,7 +36,7 @@
         "oheight": 160
       },
       {
-        "tips": "屏幕状态",
+        "label": "屏幕状态",
         "type": "image",
         "format": "ASTS",
         "orientations": 0,
@@ -57,7 +57,7 @@
       ],
       "fileTypes": [
         {
-          "tips": "动画",
+          "label": "动画",
           "type": "video",
           "format": "ANIM",
           "orientations": 0,
@@ -75,6 +75,43 @@
     "actuation": true
   },
   {
+    "name": "QK80 MK2",
+    "vendorId": "0x514B",
+    "productId": "0x4D02",
+    "firmware": "0.0.0",
+    "cdc": true,
+    "matrixLighting": {
+      "rows": 7,
+      "cols": 7,
+      "cdc": true
+    },
+    "screen": {
+      "menus": [
+        "video"
+      ],
+      "fileTypes": [
+        {
+          "label": "动画",
+          "type": "video",
+          "format": "ANIM",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": 600
+        },
+        {
+          "label": "主题",
+          "type": "video",
+          "format": "ANIT",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": 200
+        }
+      ]
+    }
+  },
+  {
     "name": "qk80v2",
     "vendorId": "0x4F57",
     "productId": "0x5002",
@@ -90,7 +127,7 @@
       ],
       "fileTypes": [
         {
-          "tips": "动画",
+          "label": "动画",
           "type": "video",
           "format": "ANIM",
           "orientations": 0,
@@ -99,7 +136,7 @@
           "animFramesLimit": 600
         },
         {
-          "tips": "主题",
+          "label": "主题",
           "type": "video",
           "format": "ANIT",
           "orientations": 0,
@@ -131,7 +168,7 @@
       "swapBit": true,
       "fileTypes": [
         {
-          "tips": "屏幕动画 Area1",
+          "label": "屏幕动画 Area1",
           "type": "video",
           "format": "ANIM",
           "orientations": 0,
@@ -140,7 +177,7 @@
           "animFramesLimit": -1
         },
         {
-          "tips": "屏幕动画 Area2",
+          "label": "屏幕动画 Area2",
           "type": "video",
           "format": "ANIM",
           "orientations": 0,
@@ -149,7 +186,7 @@
           "animFramesLimit": -1
         },
         {
-          "tips": "屏幕背景",
+          "label": "屏幕背景",
           "type": "image",
           "format": "ABKG",
           "orientations": 0,
@@ -157,7 +194,7 @@
           "oheight": 160
         },
         {
-          "tips": "屏幕状态",
+          "label": "屏幕状态",
           "type": "image",
           "format": "ASTS",
           "orientations": 0,
@@ -180,7 +217,7 @@
       "swapBit": true,
       "fileTypes": [
         {
-          "tips": "",
+          "label": "",
           "type": "video",
           "format": "ANIM",
           "orientations": 90,
@@ -189,7 +226,7 @@
           "animFramesLimit": 512
         },
         {
-          "tips": "屏幕背景",
+          "label": "屏幕背景",
           "type": "image",
           "format": "ABKG",
           "orientations": 90,
@@ -212,7 +249,7 @@
       "swapBit": true,
       "fileTypes": [
         {
-          "tips": "",
+          "label": "",
           "type": "video",
           "format": "ANIM",
           "orientations": 90,
@@ -221,7 +258,7 @@
           "animFramesLimit": 512
         },
         {
-          "tips": "屏幕背景",
+          "label": "屏幕背景",
           "type": "image",
           "format": "ABKG",
           "orientations": 90,
