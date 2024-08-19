@@ -331,13 +331,15 @@ Enter`,code:"KC_PENT",shortName:"N.Ent",title:"Numpad Enter"},{name:"Left Shift"
     ${e=>e.$ischecked?"transform: translateX(26px)":""};
   }
 `;function AccentSlider(e){const{isChecked:r,onChange:o}=e,[a,i]=React.useState(r),l=reactExports.useRef(null);return React.useEffect(()=>{i(r)},[r]),jsxs(Switch,{children:[jsx(HiddenInput$3,{ref:l,type:"checkbox",checked:a,onChange:()=>{const p=!r;i(p),o(p),l.current&&l.current.blur()}}),jsx(Slider$1,{$ischecked:a})]})}const customStyles={option:(e,r)=>({...e,"&:hover":{backgroundColor:r.isSelected?"var(--color_accent)":"var(--bg_control)"},":active":{backgroundColor:"var(--bg_control)"},background:r.isSelected?"var(--color_accent)":r.isFocused?"var(--bg_control)":"var(--bg_menu)",color:r.isSelected?"var(--color_inside-accent)":(r.isFocused,"var(--color_accent)")}),container:e=>({...e,lineHeight:"initial",flex:1}),input:e=>({...e,color:"var(--color_accent)",opacity:.5}),singleValue:e=>({...e,color:"var(--color_accent)"}),dropdownIndicator:e=>({...e,color:"var(--color_accent)"}),indicatorSeparator:e=>({...e,backgroundColor:"var(--color_accent)"}),menuList:e=>({...e,borderColor:"var(--color_accent)",backgroundColor:"var(--bg_menu)"}),placeholder:e=>({...e,color:"var(--color_accent)"}),valueContainer:e=>({...e,":active":{backgroundColor:"var(--bg_control)",borderColor:"var(--color_accent)"},"&:hover":{borderColor:"var(--color_accent)"},color:"var(--color_accent)",background:"var(--bg_menu)"}),control:(e,r)=>({...e,boxShadow:"none",":active":{backgroundColor:"transparent",borderColor:"var(--color_accent)"},"&:hover":{borderColor:"var(--color_accent)"},color:"var(--color_accent)",borderColor:"1px solid var(--color_accent)",background:"var(--bg_menu)",overflow:"hidden",width:r.selectProps.width||250})},AccentSelect=e=>jsx(Select,{...e,styles:customStyles}),Container$k=styled.span`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   line-height: initial;
-  width: 200px;
+  column-gap: 5px;
+  min-width: 200px;
 `,SliderInput=styled.input.attrs({type:"range"})`
   accent-color: var(--color_accent);
-  width: 100%;
-`,AccentRange=e=>jsx(Container$k,{children:jsx(SliderInput,{...e,onChange:r=>{e.onChange&&e.onChange(+r.target.value)}})}),ColorPickerContainer=styled.div`
+  width: 200px;
+`,AccentRange=e=>jsxs(Container$k,{children:[jsx("span",{children:e.value??e.defaultValue}),jsx(SliderInput,{...e,onChange:r=>{e.onChange&&e.onChange(+r.target.value)}})]}),ColorPickerContainer=styled.div`
   display: flex;
   align-items: center;
 `,ColorLens=styled.div`
