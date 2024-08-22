@@ -197,9 +197,16 @@
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },
                         {
-                            "label": "Debounce delay ms [1 - 31 ms]",
-                            "type": "range",
-                            "options": [1, 31],
+                            "label": "Debounce delay level",
+                            "type": "dropdown",
+                            "options": [
+                                ["Level 0", 1],
+                                ["Level 1", 10],
+                                ["Level 2", 13],
+                                ["Level 3", 17],
+                                ["Level 4", 20],
+                                ["Level 5", 25]
+                            ],
                             "content": ["id_cp_debounce", 17, 7]
                         },
                         {
@@ -219,10 +226,10 @@
                     ]
                 },
                 {
-                    "label": "SnapTap",
+                    "label": "SOCD",
                     "content": [
                         {
-                            "label": "SnapTap bind 1",
+                            "label": "SOCD bind 1",
                             "type": "toggle",
                             "content": ["id_cp_socd_1_state", 23, 4]
                         },
@@ -239,7 +246,7 @@
                             "content": ["id_cp_socd_1_key_b", 23, 6]
                         },
                         {
-                            "label": "SnapTap bind 2",
+                            "label": "SOCD bind 2",
                             "type": "toggle",
                             "content": ["id_cp_socd_2_state", 23, 7]
                         },
