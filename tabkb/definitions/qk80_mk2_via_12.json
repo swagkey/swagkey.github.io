@@ -314,11 +314,6 @@
                             "content": ["id_cp_eeprom_reset", 16, 2]
                         },
                         {
-                            "label": "Reboot Keyboard / \u91cd\u542f\u952e\u76d8\uff08VIA\u4f1a\u9000\u51fa\uff09",
-                            "type": "toggle",
-                            "content": ["id_cp_kbd_reboot", 16, 3]
-                        },
-                        {
                             "label": "Keyboard DFU / \u8fdb\u5165\u952e\u76d8\u5237\u673a\u6a21\u5f0f\uff08VIA\u4f1a\u9000\u51fa\uff09",
                             "type": "toggle",
                             "content": ["id_cp_kbd_dfu", 16, 1]
@@ -482,8 +477,8 @@
                 {
                     "w": 1.5
                 },
-                "5,10\n\n\n3,1",
                 "5,11\n\n\n3,1",
+                "5,12\n\n\n3,1",
                 {
                     "w": 1.5
                 },

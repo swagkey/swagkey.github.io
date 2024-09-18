@@ -1,7 +1,8 @@
 {
-  "name": "Targa 98",
-  "vendorId": "0x5546",
-  "productId": "0x5462",
+	"name": "Targa 98U",
+	"vendorId": "0x5546",
+	"productId": "0x5462",
+  "cdc": true,
   "screen": {
     "menus": ["video", "image", "slider"],
     "swapBit": true,
@@ -10,7 +11,7 @@
         "label": "",
         "type": "video",
         "format": "ANIM",
-        "orientations": 90,
+        "orientations": 0,
         "owidth": 160,
         "oheight": 80,
         "animFramesLimit": 512
@@ -19,7 +20,7 @@
         "label": "屏幕背景",
         "type": "image",
         "format": "ABKG",
-        "orientations": 90,
+        "orientations": 0,
         "owidth": 160,
         "oheight": 80
       }

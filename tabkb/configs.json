@@ -156,7 +156,9 @@
     "firmwareFile": "",
     "matrixLighting": {
       "rows": 7,
-      "cols": 7
+      "cols": 7,
+      "importEnable": true,
+      "maxFrame": 300
     },
     "actuation": true,
     "screen": {
@@ -207,7 +209,8 @@
   {
     "name": "Targa 98",
     "vendorId": "0x5546",
-    "productId": "0x5462",
+    "productId": "0x5463",
+    "cdc": true,
     "screen": {
       "menus": [
         "video",
@@ -220,7 +223,7 @@
           "label": "",
           "type": "video",
           "format": "ANIM",
-          "orientations": 90,
+          "orientations": 0,
           "owidth": 160,
           "oheight": 80,
           "animFramesLimit": 512
@@ -229,7 +232,7 @@
           "label": "屏幕背景",
           "type": "image",
           "format": "ABKG",
-          "orientations": 90,
+          "orientations": 0,
           "owidth": 160,
           "oheight": 80
         }
@@ -237,9 +240,10 @@
     }
   },
   {
-    "name": "Targa 98",
+    "name": "Targa 98U",
     "vendorId": "0x5546",
-    "productId": "0x5463",
+    "productId": "0x5462",
+    "cdc": true,
     "screen": {
       "menus": [
         "video",
@@ -252,7 +256,7 @@
           "label": "",
           "type": "video",
           "format": "ANIM",
-          "orientations": 90,
+          "orientations": 0,
           "owidth": 160,
           "oheight": 80,
           "animFramesLimit": 512
@@ -261,7 +265,7 @@
           "label": "屏幕背景",
           "type": "image",
           "format": "ABKG",
-          "orientations": 90,
+          "orientations": 0,
           "owidth": 160,
           "oheight": 80
         }

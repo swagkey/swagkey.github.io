@@ -7,7 +7,9 @@
   "firmwareFile": "",
   "matrixLighting": {
     "rows": 7,
-    "cols": 7
+    "cols": 7,
+    "importEnable": true,
+    "maxFrame": 300
   },
   "actuation": true,
   "screen": {

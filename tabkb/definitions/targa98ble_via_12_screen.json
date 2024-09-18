@@ -41,9 +41,9 @@
                     "label": "Features",
                     "content": [
                         {
-                            "label": "High speed / \u9ad8\u901f\u5237\u65b0\u6e38\u620f\u6a21\u5f0f\uff08\u975eUSB\u8fde\u63a5\u614e\u7528\uff09",
+                            "label": "Light Power / \u7269\u7406\u5f00\u5173\u6240\u6709led\u4f9b\u7535",
                             "type": "toggle",
-                            "content": ["id_cp_high_speed_mode", 17, 3]
+                            "content": ["id_cp_led_power_toggle", 17, 1]
                         },
                         {
                             "label": "Sleep mode / \u4f11\u7720\u65f6\u95f4\u6a21\u5f0f",
@@ -60,9 +60,19 @@
                             "content": ["id_cp_sleep_mode", 17, 2]
                         },
                         {
-                            "label": "Sleep power saving / \u7701\u7535\u6a21\u5f0f",
-                            "type": "toggle",
-                            "content": ["id_cp_power_save", 17, 5]
+                            "label": "Debounce mode / \u6309\u952e\u53bb\u6296\u6a21\u5f0f",
+                            "type": "dropdown",
+                            "options": [
+                                ["Default / \u9ed8\u8ba4", 0],
+                                ["Eager / \u5148\u89e6\u53d1", 3]
+                              ],
+                            "content": ["id_cp_debounce_mode", 17, 6]
+                        },
+                        {
+                            "label": "Debounce delay ms [1 - 31 ms, default: 1ms] / \u6309\u952e\u53bb\u6296\u65f6\u95f4\u6beb\u79d2",
+                            "type": "range",
+                            "options": [1, 31],
+                            "content": ["id_cp_debounce", 17, 7]
                         }
                     ]
                 },
@@ -82,25 +92,9 @@
                             "content": ["id_cp_connect_mode", 18, 1]
                         },
                         {
-                            "label": "Transmission Power / \u84dd\u7259\u53d1\u9001\u529f\u7387\uff08\u8d8a\u5927\u4fe1\u53f7\u8d8a\u597d\u8017\u7535\u8d8a\u591a\uff09",
-                            "type": "dropdown",
-                            "showIf": "{id_cp_connect_mode} > 0",
-                            "options": [
-                                ["Level 0", 0],
-                                ["Level 1", 1],
-                                ["Level 2", 2],
-                                ["Level 3", 3],
-                                ["Level 4", 4],
-                                ["Level 5", 5],
-                                ["Level 6", 6],
-                                ["Level 7", 7]
-                              ],
-                            "content": ["id_cp_ble_tx_mode", 18, 2]
-                        },
-                        {
                             "label": "Delete current bound / \u5220\u9664\u5f53\u524d\u84dd\u7259\u914d\u5bf9",
                             "type": "toggle",
-                            "showIf": "{id_cp_connect_mode} > 1",
+                            "showIf": "{id_cp_connect_mode} > 0",
                             "content": ["id_cp_ble_clear_current", 18, 3]
                         },
                         {
@@ -124,9 +118,14 @@
                             "type": "dropdown",
                             "showIf": "{id_cp_kbd_screen_toggle} == 1",
                             "options": [
-                                ["LOGO", 0],
-                                ["\u56fe\u7247", 1],
-                                ["\u52a8\u753b", 2]
+                                ["\u591a\u5df4\u80fa", 0],
+                                ["\u8349\u8393\u7c89", 1],
+                                ["\u9cb8\u9ca8\u7d2b", 2],
+                                ["\u5976\u5496\u767d", 3],
+                                ["\u51b7\u9edb\u84dd", 4],
+                                ["LOGO", 5],
+                                ["\u56fe\u7247", 6],
+                                ["\u52a8\u753b", 7]
                               ],
                             "content": ["id_cp_kbd_screen_style", 24, 4]
                         }
@@ -157,101 +156,94 @@
     ],
     "customKeycodes": [
         {"name": "Light mode",
-         "title": "[LNT_MOD] Toggle RGB Matrix or Light mode control / \u5207\u6362\u8f74\u706f\u4e0e\u6c1b\u56f4\u706f\u914d\u7f6e\u6a21\u5f0f",
-         "shortName": "LgtMod"
+            "title": "[LNT_MOD] Toggle RGB Matrix or Light mode control / \u5207\u6362\u8f74\u706f\u4e0e\u6c1b\u56f4\u706f\u914d\u7f6e\u6a21\u5f0f",
+            "shortName": "LgtMod"
         },
         {"name": "Light Power on",
-         "title": "[LNT_ON] Turn on all LED power / \u7269\u7406\u5f00\u542f\u706f\u4f9b\u7535",
-         "shortName": "LgtOn"
+            "title": "[LNT_ON] Turn on all LED power / \u7269\u7406\u5f00\u542f\u706f\u4f9b\u7535",
+            "shortName": "LgtOn"
         },
         {"name": "Light Power off",
-         "title": "[LNT_OFF] Turn off all LED power / \u7269\u7406\u5173\u95ed\u706f\u4f9b\u7535",
-         "shortName": "LgtOff"
-        },
-        {"name": "Config reset",
-         "title": "[CFG_RST] Reset kbd settings / \u91cd\u7f6e\u952e\u76d8\u914d\u7f6e\u4fe1\u606f",
-         "shortName": "CfRst"
+            "title": "[LNT_OFF] Turn off all LED power / \u7269\u7406\u5173\u95ed\u706f\u4f9b\u7535",
+            "shortName": "LgtOff"
         },
         {"name": "USB Mode",
-         "title": "[CNT_USB] Enter USB mode / \u5207\u6362\u5230USB\u6a21\u5f0f",
-         "shortName": "USB"
-        },
-        {"name": "BLE power+",
-         "title": "[BLE_SGI] Increase BLE transmit power / \u589e\u52a0\u84dd\u7259\u53d1\u9001\u529f\u7387",
-         "shortName": "BS+"
-        },
-        {"name": "BLE power-",
-         "title": "[BLE_SGD] Reduce BLE transmit power / \u964d\u4f4e\u84dd\u7259\u53d1\u9001\u529f\u7387",
-         "shortName": "BS-"
+            "title": "[CNT_USB] Enter USB mode / \u5207\u6362\u5230USB\u6a21\u5f0f",
+            "shortName": "USB"
         },
         {"name": "Clear bound",
-         "title": "[BLE_CLC] Clear the current BLE bound / \u6e05\u9664\u5f53\u524d\u84dd\u7259\u5206\u7ec4\u914d\u5bf9",
-         "shortName": "BCl"
+            "title": "[BLE_CLC] Clear the current BLE bound / \u6e05\u9664\u5f53\u524d\u84dd\u7259\u5206\u7ec4\u914d\u5bf9",
+            "shortName": "BCl"
         },
         {"name": "Clear all bounds",
-         "title": "[BLE_CLA] Clear all BLE bounds / \u6e05\u9664\u6240\u6709\u84dd\u7259\u5206\u7ec4\u914d\u5bf9",
-         "shortName": "BCls"
+            "title": "[BLE_CLA] Clear all BLE bounds / \u6e05\u9664\u6240\u6709\u84dd\u7259\u5206\u7ec4\u914d\u5bf9",
+            "shortName": "BCls"
         },
         {"name": "BLE G1",
-         "title": "[BLE_GP1] Enter Bluetooth group 1 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 1",
-         "shortName": "BLE1"
+            "title": "[BLE_GP1] Enter Bluetooth group 1 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 1",
+            "shortName": "BLE1"
         },
         {"name": "BLE G2",
-         "title": "[BLE_GP2] Enter Bluetooth group 2 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 2",
-         "shortName": "BLE2"
+            "title": "[BLE_GP2] Enter Bluetooth group 2 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 2",
+            "shortName": "BLE2"
         },
         {"name": "BLE G3",
-         "title": "[BLE_GP3] Enter Bluetooth group 3 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 3",
-         "shortName": "BLE3"
+            "title": "[BLE_GP3] Enter Bluetooth group 3 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 3",
+            "shortName": "BLE3"
         },
         {"name": "Radio 2.4G",
-         "title": "[WIR_G24] Enter radio 2.4G mode / \u5207\u6362 2.4G \u6a21\u5f0f",
-         "shortName": "R2.4G"
+            "title": "[WIR_G24] Enter radio 2.4G mode / \u5207\u6362 2.4G \u6a21\u5f0f",
+            "shortName": "R2.4G"
         },
         {"name": "2.4G receiver DFU",
-         "title": "[WIR_BOT] Enter the 2.4G recevier dfu mode / \u8fdb\u5165 2.4G \u5237\u673a\u6a21\u5f0f",
-         "shortName": "2.4DFU"
+            "title": "[WIR_BOT] Enter the 2.4G recevier dfu mode / \u8fdb\u5165 2.4G \u5237\u673a\u6a21\u5f0f",
+            "shortName": "2.4DFU"
         },
         {"name": "Sleep mode",
-         "title": "[SLP_MOD] Sleep interval selection / \u5207\u6362\u4f11\u7720\u65f6\u957f",
-         "shortName": "SlpMod"
-        },
-        {"name": "High speed",
-        "title": "[HIG_SPD] High-speed refresh mode / \u9ad8\u901f\u5237\u65b0\u6e38\u620f\u6a21\u5f0f",
-        "shortName": "HiSpd"
+            "title": "[SLP_MOD] Sleep interval selection / \u5207\u6362\u4f11\u7720\u65f6\u957f",
+            "shortName": "SlpMod"
         },
         {"name": "Info leds",
-         "title": "[INF_LED] Toggle display current KBD to Led / \u5207\u6362\u952e\u76d8\u72b6\u6001\u6307\u793a\u706f\u6a21\u5f0f",
-         "shortName": "InfLed"
+            "title": "[INF_LED] Toggle display current KBD to Led / \u5207\u6362\u952e\u76d8\u72b6\u6001\u6307\u793a\u706f\u6a21\u5f0f",
+            "shortName": "InfLed"
         },
         {"name": "Info",
-         "title": "[INF_OUT] Print the current KBD information / \u8f93\u51fa\u5f53\u524d\u952e\u76d8\u4fe1\u606f",
-         "shortName": "Info"
+            "title": "[INF_OUT] Print the current KBD information / \u8f93\u51fa\u5f53\u524d\u952e\u76d8\u4fe1\u606f",
+            "shortName": "Info"
         },
         {"name": "Screen toggle",
          "title": "[LCD_TOG] Screen toggle / \u5c4f\u5e55\u5f00\u5173",
          "shortName": "ScrTog"
         },
-        {"name": "Screen input",
-         "title": "[LCD_FIL] Screen content input / \u5c4f\u5e55\u5185\u5bb9\u8bbe\u7f6e",
-         "shortName": "ScrIn"
-        },
-        {"name": "Screen mode",
-         "title": "[LCD_MOD] Screen mode setting / \u5c4f\u5e55\u6a21\u5f0f\u8bbe\u7f6e",
-         "shortName": "ScrMod"
-        },
         {"name": "Screen style",
          "title": "[LCD_STY] Screen style color setting / \u5c4f\u5e55\u989c\u8272\u6837\u5f0f\u8bbe\u7f6e",
          "shortName": "ScrSty"
-        },
-        {"name": "Screen erase",
-         "title": "[LCD_STY] Screen content erase / \u5c4f\u5e55\u5185\u5bb9\u6e05\u7a7a",
-         "shortName": "ScrErs"
         }
     ],
 	"layouts": {
+        "labels": [
+            ["Bottom Space", "625U", "7U"]
+        ],
 		"keymap": [
+            [
+                {
+                    "y":5.25,
+                    "w":1.5
+                },
+                "5,0\n\n\n0,1",
+                "5,1\n\n\n0,1",
+                {"w":1.5},
+                "5,2\n\n\n0,1",
+                {"w":7},
+                "5,5\n\n\n0,1",
+                {"w":1.5},
+                "11,4\n\n\n0,1"
+            ],
 			[
+                {
+                    "x": 0,
+                    "y": 0
+                },
 				"0,0",
 				{
 					"x": 0.25
@@ -366,7 +358,7 @@
 				},
 				"8,7",
 				"8,8",
-				"9,9",
+				"8,9",
 				{
 					"h": 2,
                     "y": -1
@@ -405,27 +397,27 @@
 				{
 					"w": 1.25
 				},
-				"5,0",
+				"5,0\n\n\n0,0",
 				{
 					"w": 1.25
 				},
-				"5,1",
+				"5,1\n\n\n0,0",
 				{
 					"w": 1.25
 				},
-				"5,2",
+				"5,2\n\n\n0,0",
 				{
 					"w": 6.25
 				},
-				"5,5",
+				"5,5\n\n\n0,0",
 				{
 					"w": 1.25
 				},
-				"11,4",
+				"11,4\n\n\n0,0",
 				{
 					"w": 1.25
 				},
-				"11,6",
+				"11,6\n\n\n0,0",
 				{
 					"x": 0.5
 				},
