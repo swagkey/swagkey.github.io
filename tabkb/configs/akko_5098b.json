@@ -1,0 +1,7 @@
+{
+  "name": "AKKO 5098B",
+  "vendorId": "0x3151",
+  "productId": "0x4015",
+  "firmware": "0.0.0",
+  "cdc": true
+}
