@@ -5,12 +5,29 @@
   "firmware": "0.0.0",
   "cdc": true,
   "screen": {
-    "menus": ["video"],
+    "menus": ["video", "image", "slider"],
     "fileTypes": [
       {
         "label": "动画",
         "type": "video",
         "format": "ANIM",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320,
+        "animFramesLimit": 400
+      },
+      {
+        "label": "屏幕背景",
+        "type": "image",
+        "format": "ABKG",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320
+      },
+      {
+        "label": "动画",
+        "type": "slider",
+        "format": "ANPS",
         "orientations": 0,
         "owidth": 172,
         "oheight": 320,

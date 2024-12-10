@@ -1,7 +1,7 @@
 {
-  "name": "Targa 98",
-  "vendorId": "0x5546",
-  "productId": "0x5463",
+	"name": "Targa 98U RGB",
+	"vendorId": "0x5546",
+	"productId": "0x5464",
   "cdc": true,
   "screen": {
     "menus": ["video", "image", "slider"],

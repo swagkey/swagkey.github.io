@@ -12,16 +12,16 @@
             "label": "Lighting",
             "content": [
                 {
-                    "label": "Backlight / \u8f74\u706f",
+                    "label": "Backlight",
                     "content": [
                       {
-                        "label": "Brightness / \u4eae\u5ea6",
+                        "label": "Brightness",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_rgb_matrix_brightness", 3, 1]
                       },
                       {
-                        "label": "Effect / \u706f\u6548",
+                        "label": "Effect",
                         "type": "dropdown",
                         "content": ["id_qmk_rgb_matrix_effect", 3, 2],
                         "options": [
@@ -74,30 +74,30 @@
                       },
                       {
                         "showIf": "{id_qmk_rgb_matrix_effect} != 0",
-                        "label": "Effect Speed / \u52a8\u753b\u901f\u5ea6",
+                        "label": "Effect Speed",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_rgb_matrix_effect_speed", 3, 3]
                       },
                       {
                         "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
-                        "label": "Color / \u989c\u8272",
+                        "label": "Color",
                         "type": "color",
                         "content": ["id_qmk_rgb_matrix_color", 3, 4]
                       }
                     ]
                 },
                 {
-                    "label": "Underglow / \u6c1b\u56f4\u706f",
+                    "label": "Underglow",
                     "content": [
                         {
-                        "label": "Brightness / \u4eae\u5ea6",
+                        "label": "Brightness",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_rgblight_brightness", 2, 1]
                         },
                         {
-                        "label": "Effect / \u706f\u6548",
+                        "label": "Effect",
                         "type": "dropdown",
                         "content": ["id_qmk_rgblight_effect", 2, 2],
                         "options": [
@@ -148,14 +148,14 @@
                         },
                         {
                         "showIf": "{id_qmk_rgblight_effect} != 0",
-                        "label": "Effect Speed / \u52a8\u753b\u901f\u5ea6",
+                        "label": "Effect Speed",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_rgblight_effect_speed", 2, 3]
                         },
                         {
                         "showIf": "{id_qmk_rgblight_effect} != 0 && {id_qmk_rgblight_effect} != 35",
-                        "label": "Color / \u989c\u8272",
+                        "label": "Color",
                         "type": "color",
                         "content": ["id_qmk_rgblight_color", 2, 4]
                         }
@@ -170,22 +170,22 @@
                     "label": "Magic",
                     "content": [
                         {
-                            "label": "Toggle N-key rollover / \u5168\u952e\u65e0\u51b2\u5f00\u5173\uff08\u975eUSB\u6a21\u5f0f\u614e\u7528\uff09",
+                            "label": "Toggle N-key rollover",
                             "type": "toggle",
                             "content": ["id_cp_magic_nkro", 19, 1]
                         },
                         {
-                            "label": "Toggles the status of the GUI keys / \u3010Win\u3011\u952e\u5f00\u5173\uff08\u6e38\u620f\u65f6\u5173\u95edWin\u952e\uff09",
+                            "label": "Toggles the status of the GUI keys",
                             "type": "toggle",
                             "content": ["id_cp_magic_gui", 19, 2]
                         },
                         {
-                            "label": "Toggle Alt and GUI swap on both sides / \u3010Alt/Cmd\u3011\u4e92\u6362\u3010Win/Opt\u3011",
+                            "label": "Toggle Alt and GUI swap on both sides",
                             "type": "toggle",
                             "content": ["id_cp_magic_alt_gui", 19, 3]
                         },
                         {
-                            "label": "Treat Caps Lock as Control / \u5c06\u3010Caps\u3011\u53d8\u4e3a\u3010Ctrl\u3011",
+                            "label": "Treat Caps Lock as Control",
                             "type": "toggle",
                             "content": ["id_cp_magic_caps_ctrl", 19, 4]
                         }
@@ -195,12 +195,12 @@
                     "label": "Features",
                     "content": [
                         {
-                            "label": "Light Power / \u7269\u7406\u5f00\u5173\u6240\u6709led\u4f9b\u7535",
+                            "label": "Light Power",
                             "type": "toggle",
                             "content": ["id_cp_led_power_toggle", 17, 1]
                         },
                         {
-                            "label": "Sleep Mode / \u4f11\u7720\u65f6\u95f4\u6a21\u5f0f",
+                            "label": "Sleep Mode",
                             "type": "dropdown",
                             "options": [
                                 ["Disable", 0],
@@ -214,12 +214,12 @@
                             "content": ["id_cp_sleep_mode", 17, 2]
                         },
                         {
-                            "label": "Sleep power saving / \u7701\u7535\u6a21\u5f0f",
+                            "label": "Sleep Power Saving",
                             "type": "toggle",
                             "content": ["id_cp_power_save", 17, 5]
                         },
                         {
-                            "label": "Info LED / \u8f93\u51fa\u952e\u76d8\u4fe1\u606f\u5230\u6307\u793a\u706f",
+                            "label": "Info LED",
                             "type": "toggle",
                             "content": ["id_cp_info_led", 17, 4]
                         }
@@ -229,31 +229,31 @@
                     "label": "Connect",
                     "content":[
                         {
-                            "label": "Connect Mode / \u8fde\u63a5\u6a21\u5f0f",
+                            "label": "Connect Mode",
                             "type": "dropdown",
                             "options": [
                                 ["USB", 0],
-                                ["Wireless 2.4G \u65e0\u7ebf 2.4G", 1],
-                                ["Bluetooth G1 \u84dd\u7259\u8bbe\u5907 1", 2],
-                                ["Bluetooth G2 \u84dd\u7259\u8bbe\u5907 2", 3],
-                                ["Bluetooth G3 \u84dd\u7259\u8bbe\u5907 3", 4]
+                                ["Wireless 2.4G", 1],
+                                ["Bluetooth G1", 2],
+                                ["Bluetooth G2", 3],
+                                ["Bluetooth G3", 4]
                               ],
                             "content": ["id_cp_connect_mode", 18, 1]
                         },
                         {
-                            "label": "Delete current bound / \u5220\u9664\u5f53\u524d\u84dd\u7259\u914d\u5bf9",
+                            "label": "Delete current bound",
                             "type": "toggle",
                             "showIf": "{id_cp_connect_mode} > 0",
                             "content": ["id_cp_ble_clear_current", 18, 3]
                         },
                         {
-                            "label": "Delete all bounds / \u5220\u9664\u6240\u6709\u84dd\u7259\u914d\u5bf9",
+                            "label": "Delete all bounds",
                             "type": "toggle",
                             "showIf": "{id_cp_connect_mode} > 1",
                             "content": ["id_cp_ble_clear_bounds", 18, 4]
                         },
                         {
-                            "label": "2.4G Receiver DFU / 2.4G\u63a5\u6536\u5668\u5237\u673a\u6a21\u5f0f",
+                            "label": "2.4G Receiver DFU",
                             "type": "toggle",
                             "showIf": "{id_cp_connect_mode} == 1",
                             "content": ["id_cp_w24_dfu", 18, 5]
@@ -261,20 +261,20 @@
                     ]
                 },
                 {
-                    "label": "Fireware",
+                    "label": "Firmware",
                     "content": [
                         {
-                            "label": "Clear Settings / \u5220\u9664\u952e\u76d8\u6240\u6709\u914d\u7f6e\uff08\u4f7f\u7528\u540e\u9700\u8981\u91cd\u542f\u952e\u76d8\uff09",
+                            "label": "Clear Settings",
                             "type": "toggle",
                             "content": ["id_cp_eeprom_reset", 16, 2]
                         },
                         {
-                            "label": "Reboot Keyboard / \u91cd\u542f\u952e\u76d8\uff08VIA\u4f1a\u9000\u51fa\uff09",
+                            "label": "Reboot Keyboard",
                             "type": "toggle",
                             "content": ["id_cp_kbd_reboot", 16, 3]
                         },
                         {
-                            "label": "Keyboard DFU / \u8fdb\u5165\u952e\u76d8\u5237\u673a\u6a21\u5f0f\uff08VIA\u4f1a\u9000\u51fa\uff09",
+                            "label": "Keyboard DFU",
                             "type": "toggle",
                             "content": ["id_cp_kbd_dfu", 16, 1]
                         }
@@ -285,63 +285,63 @@
     ],
     "customKeycodes": [
         {"name": "Light mode",
-         "title": "[LNT_MOD] Toggle RGB Matrix or Light mode control / \u5207\u6362\u8f74\u706f\u4e0e\u6c1b\u56f4\u706f\u914d\u7f6e\u6a21\u5f0f",
+         "title": "[LNT_MOD] Toggle RGB Matrix or Light mode control",
          "shortName": "LgtMod"
         },
         {"name": "Light Power on",
-         "title": "[LNT_ON] Turn on all LED power / \u7269\u7406\u5f00\u542f\u706f\u4f9b\u7535",
+         "title": "[LNT_ON] Turn on all LED power",
          "shortName": "LgtOn"
         },
         {"name": "Light Power off",
-         "title": "[LNT_OFF] Turn off all LED power / \u7269\u7406\u5173\u95ed\u706f\u4f9b\u7535",
+         "title": "[LNT_OFF] Turn off all LED power",
          "shortName": "LgtOff"
         },
         {"name": "USB Mode",
-         "title": "[CNT_USB] Enter USB mode / \u5207\u6362\u5230USB\u6a21\u5f0f",
+         "title": "[CNT_USB] Enter USB mode",
          "shortName": "USB"
         },
         {"name": "Clear bound",
-         "title": "[BLE_CLC] Clear the current BLE bound / \u6e05\u9664\u5f53\u524d\u84dd\u7259\u5206\u7ec4\u914d\u5bf9",
+         "title": "[BLE_CLC] Clear the current BLE bound",
          "shortName": "BCl"
         },
         {"name": "Clear all bounds",
-         "title": "[BLE_CLA] Clear all BLE bounds / \u6e05\u9664\u6240\u6709\u84dd\u7259\u5206\u7ec4\u914d\u5bf9",
+         "title": "[BLE_CLA] Clear all BLE bounds",
          "shortName": "BCls"
         },
         {"name": "BLE G1",
-         "title": "[BLE_GP1] Enter Bluetooth group 1 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 1",
+         "title": "[BLE_GP1] Enter Bluetooth group 1",
          "shortName": "BLE1"
         },
         {"name": "BLE G2",
-         "title": "[BLE_GP2] Enter Bluetooth group 2 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 2",
+         "title": "[BLE_GP2] Enter Bluetooth group 2",
          "shortName": "BLE2"
         },
         {"name": "BLE G3",
-         "title": "[BLE_GP3] Enter Bluetooth group 3 / \u5207\u6362\u84dd\u7259\u5206\u7ec4 3",
+         "title": "[BLE_GP3] Enter Bluetooth group 3",
          "shortName": "BLE3"
         },
         {"name": "Radio 2.4G",
-         "title": "[WIR_G24] Enter radio 2.4G mode / \u5207\u6362 2.4G \u6a21\u5f0f",
+         "title": "[WIR_G24] Enter radio 2.4G mode",
          "shortName": "R2.4G"
         },
         {"name": "2.4G receiver DFU",
-         "title": "[WIR_BOT] Enter the 2.4G recevier dfu mode / \u8fdb\u5165 2.4G \u5237\u673a\u6a21\u5f0f",
+         "title": "[WIR_BOT] Enter the 2.4G recevier dfu mode",
          "shortName": "2.4DFU"
         },
         {"name": "Sleep mode",
-         "title": "[SLP_MOD] Sleep interval selection / \u5207\u6362\u4f11\u7720\u65f6\u957f",
+         "title": "[SLP_MOD] Sleep interval selection",
          "shortName": "SlpMod"
         },
         {"name": "High speed",
-        "title": "[HIG_SPD] High-speed refresh mode / \u9ad8\u901f\u5237\u65b0\u6e38\u620f\u6a21\u5f0f",
+        "title": "[HIG_SPD] High-speed refresh mode",
         "shortName": "HiSpd"
         },
         {"name": "Info leds",
-         "title": "[INF_LED] Toggle display current KBD to Led / \u5207\u6362\u952e\u76d8\u72b6\u6001\u6307\u793a\u706f\u6a21\u5f0f",
+         "title": "[INF_LED] Toggle display current KBD to Led",
          "shortName": "InfLed"
         },
         {"name": "Info",
-         "title": "[INF_OUT] Print the current KBD information / \u8f93\u51fa\u5f53\u524d\u952e\u76d8\u4fe1\u606f",
+         "title": "[INF_OUT] Print the current KBD information",
          "shortName": "Info"
         }
     ],

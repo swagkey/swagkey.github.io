@@ -162,22 +162,22 @@
           "label": "Magic",
           "content": [
             {
-              "label": "Toggle N-key rollover / \u5168\u952e\u65e0\u51b2\u5f00\u5173\uff08\u975eUSB\u6a21\u5f0f\u614e\u7528\uff09",
+              "label": "Toggle N-key rollover",
               "type": "toggle",
               "content": ["id_cp_magic_nkro", 19, 1]
             },
             {
-              "label": "Toggles the status of the GUI keys / \u3010Win\u3011\u952e\u5f00\u5173\uff08\u6e38\u620f\u65f6\u5173\u95edWin\u952e\uff09",
+              "label": "Toggles the status of the GUI keys",
               "type": "toggle",
               "content": ["id_cp_magic_gui", 19, 2]
             },
             {
-              "label": "Toggle Alt and GUI swap on both sides / \u3010Alt/Cmd\u3011\u4e92\u6362\u3010Win/Opt\u3011",
+              "label": "Toggle Alt and GUI swap on both sides",
               "type": "toggle",
               "content": ["id_cp_magic_alt_gui", 19, 3]
             },
             {
-              "label": "Treat Caps Lock as Control / \u5c06\u3010Caps\u3011\u53d8\u4e3a\u3010Ctrl\u3011",
+              "label": "Treat Caps Lock as Control",
               "type": "toggle",
               "content": ["id_cp_magic_caps_ctrl", 19, 4]
             }
@@ -187,27 +187,27 @@
           "label": "Features",
           "content": [
             {
-              "label": "High speed / \u9ad8\u901f\u5237\u65b0\u6e38\u620f\u6a21\u5f0f\uff08\u975eUSB\u8fde\u63a5\u614e\u7528\uff09",
+              "label": "High Speed",
               "type": "toggle",
               "content": ["id_cp_high_speed_mode", 17, 3]
             }
           ]
         },
         {
-          "label": "Fireware",
+          "label": "Firmware",
           "content": [
             {
-              "label": "Clear Settings / \u5220\u9664\u952e\u76d8\u6240\u6709\u914d\u7f6e\uff08\u4f7f\u7528\u540e\u9700\u8981\u91cd\u542f\u952e\u76d8\uff09",
+              "label": "Clear Settings",
               "type": "toggle",
               "content": ["id_cp_eeprom_reset", 16, 2]
             },
             {
-              "label": "Reboot Keyboard / \u91cd\u542f\u952e\u76d8\uff08VIA\u4f1a\u9000\u51fa\uff09",
+              "label": "Reboot Keyboard",
               "type": "toggle",
               "content": ["id_cp_kbd_reboot", 16, 3]
             },
             {
-              "label": "Keyboard DFU / \u8fdb\u5165\u952e\u76d8\u5237\u673a\u6a21\u5f0f\uff08VIA\u4f1a\u9000\u51fa\uff09",
+              "label": "Keyboard DFU",
               "type": "toggle",
               "content": ["id_cp_kbd_dfu", 16, 1]
             }

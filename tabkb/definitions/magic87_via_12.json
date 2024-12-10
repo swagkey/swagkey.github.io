@@ -1,7 +1,7 @@
 {
-	"name": "QK80 MK2",
-	"vendorId": "0x514B",
-	"productId": "0x4D02",
+	"name": "Magic87",
+	"vendorId": "0x54AB",
+	"productId": "0x6D87",
 	"matrix": {
 		"rows": 6,
 		"cols": 16
@@ -18,12 +18,12 @@
                         "label": "Brightness",
                         "type": "range",
                         "options": [0, 255],
-                        "content": ["id_qmk_rgb_matrix_brightness", 22, 1]
+                        "content": ["id_qmk_rgb_matrix_brightness", 3, 1]
                       },
                       {
                         "label": "Effect",
                         "type": "dropdown",
-                        "content": ["id_qmk_rgb_matrix_effect", 22, 2],
+                        "content": ["id_qmk_rgb_matrix_effect", 3, 2],
                         "options": [
                           "All Off",
                           "Solid Color",
@@ -77,116 +77,14 @@
                         "label": "Effect Speed",
                         "type": "range",
                         "options": [0, 255],
-                        "content": ["id_qmk_rgb_matrix_effect_speed", 22, 3]
+                        "content": ["id_qmk_rgb_matrix_effect_speed", 3, 3]
                       },
                       {
                         "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
                         "label": "Color",
                         "type": "color",
-                        "content": ["id_qmk_rgb_matrix_color", 22, 4]
+                        "content": ["id_qmk_rgb_matrix_color", 3, 4]
                       }
-                    ]
-                },
-                {
-                    "label": "Underglow",
-                    "content": [
-                        {
-                        "label": "Brightness",
-                        "type": "range",
-                        "options": [0, 255],
-                        "content": ["id_qmk_rgblight_brightness", 21, 1]
-                        },
-                        {
-                        "label": "Effect",
-                        "type": "dropdown",
-                        "content": ["id_qmk_rgblight_effect", 21, 2],
-                        "options": [
-                            "All Off",
-                            "Solid Color",
-                            "Breathing 1",
-                            "Breathing 2",
-                            "Breathing 3",
-                            "Breathing 4",
-                            "Rainbow Mood 1",
-                            "Rainbow Mood 2",
-                            "Rainbow Mood 3",
-                            "Rainbow Swirl 1",
-                            "Rainbow Swirl 2",
-                            "Rainbow Swirl 3",
-                            "Rainbow Swirl 4",
-                            "Rainbow Swirl 5",
-                            "Rainbow Swirl 6",
-                            "Snake 1",
-                            "Snake 2",
-                            "Snake 3",
-                            "Snake 4",
-                            "Snake 5",
-                            "Snake 6",
-                            "Knight 1",
-                            "Knight 2",
-                            "Knight 3",
-                            "Christmas",
-                            "Gradient 1",
-                            "Gradient 2",
-                            "Gradient 3",
-                            "Gradient 4",
-                            "Gradient 5",
-                            "Gradient 6",
-                            "Gradient 7",
-                            "Gradient 8",
-                            "Gradient 9",
-                            "Gradient 10",
-                            "RGB Test",
-                            "Alternating",
-                            "Twinkle 1",
-                            "Twinkle 2",
-                            "Twinkle 3",
-                            "Twinkle 4",
-                            "Twinkle 5",
-                            "Twinkle 6"
-                        ]
-                        },
-                        {
-                        "showIf": "{id_qmk_rgblight_effect} != 0",
-                        "label": "Effect Speed",
-                        "type": "range",
-                        "options": [0, 255],
-                        "content": ["id_qmk_rgblight_effect_speed", 21, 3]
-                        },
-                        {
-                        "showIf": "{id_qmk_rgblight_effect} != 0 && {id_qmk_rgblight_effect} != 35",
-                        "label": "Color",
-                        "type": "color",
-                        "content": ["id_qmk_rgblight_color", 21, 4]
-                        }
-                    ]
-                },
-                {
-                    "label": "MATRIX LED",
-                    "content": [
-                        {
-                        "label": "Brightness",
-                        "type": "range",
-                        "options": [0, 255],
-                        "content": ["id_qmk_led_matrix_brightness", 26, 1]
-                        },
-                        {
-                        "label": "Effect",
-                        "type": "dropdown",
-                        "content": ["id_qmk_led_matrix_effect", 26, 2],
-                        "options": [
-                            "All Off",
-                            "Typewriter",
-                            "Terminal",
-                            "Raindrop",
-                            "Custom"
-                        ]
-                        },
-                        {
-                        "label": "Color",
-                        "type": "color",
-                        "content": ["id_qmk_led_matrix_color", 26, 4]
-                        }
                     ]
                 }
             ]
@@ -242,6 +140,11 @@
                             "content": ["id_cp_sleep_mode", 17, 2]
                         },
                         {
+                            "label": "Info LED",
+                            "type": "toggle",
+                            "content": ["id_cp_info_led", 17, 4]
+                        },
+                        {
                             "label": "Debounce Mode",
                             "type": "dropdown",
                             "options": [
@@ -267,10 +170,6 @@
                     ]
                 },
                 {
-                    "label": "Date Time",
-                    "content": []
-                },
-                {
                     "label": "Connect",
                     "content":[
                         {
@@ -289,19 +188,19 @@
                             "label": "Delete current bound",
                             "type": "toggle",
                             "showIf": "{id_cp_connect_mode} > 0",
-                            "content": ["id_cp_ble_clear_current", 18, 3]
+                            "content": ["id_cp_connect_bond_rest", 18, 3]
                         },
                         {
                             "label": "Delete all bounds",
                             "type": "toggle",
                             "showIf": "{id_cp_connect_mode} > 1",
-                            "content": ["id_cp_ble_clear_bounds", 18, 4]
+                            "content": ["id_cp_connect_bonds_clear", 18, 4]
                         },
                         {
                             "label": "2.4G Receiver DFU",
                             "type": "toggle",
                             "showIf": "{id_cp_connect_mode} == 1",
-                            "content": ["id_cp_w24_dfu", 18, 5]
+                            "content": ["id_cp_connect_dfu", 18, 5]
                         }
                     ]
                 },
@@ -312,6 +211,21 @@
                             "label": "Clear Settings",
                             "type": "toggle",
                             "content": ["id_cp_eeprom_reset", 16, 2]
+                        },
+                        {
+                            "label": "Reboot Keyboard",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_reboot", 16, 3]
+                        },
+                        {
+                            "label": "Device shutdown",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_shutdown", 16, 5]
+                        },
+                        {
+                            "label": "Keyboard DFU",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_dfu", 16, 1]
                         }
                     ]
                 }
@@ -374,147 +288,43 @@
         {"name": "Info",
          "title": "[INF_OUT] Print the current KBD information",
          "shortName": "Info"
-        },
-        {"name": "Screen Toggle",
-         "title": "[TGI_TOG] Screen Toggle",
-         "shortName": "ScnTog"
-        },
-        {"name": "Screen Mode",
-        "title": "[TGI_MOD] Screen Mode",
-         "shortName": "ScnMd"
-        },
-        {"name": "Screen enter key",
-         "title": "[TGI_ENT] Screen enter key",
-         "shortName": "ScEnt"
-        },
-        {"name": "Screen exit key",
-         "title": "[TGI_EXT] Screen exit key",
-         "shortName": "ScExt"
-        },
-        {"name": "Screen up key",
-         "title": "[TGI_UP] Screen up key",
-         "shortName": "ScnUp"
-        },
-        {"name": "Screen down key",
-         "title": "[TGI_DN] Screen down key",
-         "shortName": "ScnDn"
-        },
-        {"name": "Screen left key",
-         "title": "[TGI_LT] Screen left key",
-         "shortName": "ScnLt"
-        },
-        {"name": "Screen right key",
-         "title": "[TGI_RT] Screen right key",
-         "shortName": "ScnRt"
-        },
-        {"name": "Led Mode",
-         "title": "[TJM_MOD] MATRIX LED Mode",
-         "shortName": "LedMd"
         }
     ],
-    "layouts": {
-        "labels": [
-            "Split Backspace",
-            "ISO",
-            "Split Left Shift",
+	"layouts": {
+		"keymap": [
             [
-                "Bottom Space",
-                "625U",
-                "7U"
-            ]
-        ],
-        "keymap": [
-            [
-                {
-                    "x": 13
-                },
-                "1,13\n\n\n0,1",
-                "1,14\n\n\n0,1"
-            ],
-            [
-                {
-                    "x": 13.75,
-                    "w": 1.25,
-                    "h": 2,
-                    "w2": 1.5,
-                    "h2": 1,
-                    "x2": -0.25
-                },
-                "3,13\n\n\n1,1"
-            ],
-            [
-                {
-                    "x": 12.75
-                },
-                "3,12\n\n\n1,1"
-            ],
-            [
-                {
-                    "w": 1.25
-                },
-                "4,0\n\n\n2,1",
-                "4,1\n\n\n2,1"
-            ],
-            [
-                {
-                    "w": 1.5
-                },
-                "5,0\n\n\n3,1",
-                "5,1\n\n\n3,1",
-                {
-                    "w": 1.5
-                },
-                "5,2\n\n\n3,1",
-                {
-                    "w": 7
-                },
-                "5,6\n\n\n3,1",
-                {
-                    "w": 1.5
-                },
-                "5,11\n\n\n3,1",
-                "5,12\n\n\n3,1",
-                {
-                    "w": 1.5
-                },
-                "5,13\n\n\n3,1"
-            ],
-            [
-                {
-                    "y": 1
-                },
                 "0,0",
                 {
-                    "x": 1
+                  "x": 1
                 },
                 "0,1",
                 "0,2",
                 "0,3",
                 "0,4",
                 {
-                    "x": 0.5
+                  "x": 0.5
                 },
                 "0,5",
                 "0,6",
                 "0,7",
                 "0,8",
                 {
-                    "x": 0.5
+                  "x": 0.5
                 },
                 "0,9",
                 "0,10",
                 "0,11",
                 "0,12",
                 {
-                    "x": 0.25
+                  "x": 0.25
                 },
                 "0,13",
                 "0,14",
                 "0,15"
-            ],
-            [
+              ],
+              [
                 {
-                    "y": 0.5
+                  "y": 0.25
                 },
                 "1,0",
                 "1,1",
@@ -530,19 +340,19 @@
                 "1,11",
                 "1,12",
                 {
-                    "w": 2
+                  "w": 2
                 },
-                "1,14\n\n\n0,0",
+                "1,13",
                 {
-                    "x": 0.25
+                  "x": 0.25
                 },
-                "1,15",
-                "2,14",
-                "2,15"
-            ],
-            [
+                "3,14",
+                "1,14",
+                "1,15"
+              ],
+              [
                 {
-                    "w": 1.5
+                  "w": 1.5
                 },
                 "2,0",
                 "2,1",
@@ -558,13 +368,19 @@
                 "2,11",
                 "2,12",
                 {
-                    "w": 1.5
+                  "w": 1.5
                 },
-                "2,13\n\n\n1,0"
-            ],
-            [
+                "2,13",
                 {
-                    "w": 1.75
+                  "x": 0.25
+                },
+                "3,15",
+                "2,14",
+                "2,15"
+              ],
+              [
+                {
+                  "w": 1.75
                 },
                 "3,0",
                 "3,1",
@@ -579,26 +395,16 @@
                 "3,10",
                 "3,11",
                 {
-                    "w": 2.25
+                  "w": 2.25
                 },
-                "3,13\n\n\n1,0",
+                "3,12"
+              ],
+              [
                 {
-                    "x": 1.75,
-                    "w": 0.75,
-                    "h": 0.5
+                  "w": 2.25
                 },
-                "3,14",
-                {
-                    "w": 0.75,
-                    "h": 0.5
-                },
-                "3,15"
-            ],
-            [
-                {
-                    "w": 2.25
-                },
-                "4,0\n\n\n2,0",
+                "4,0",
+                "4,1",
                 "4,2",
                 "4,3",
                 "4,4",
@@ -608,56 +414,55 @@
                 "4,8",
                 "4,9",
                 "4,10",
-                "4,11",
                 {
-                    "w": 2.75
+                  "w": 2.75
                 },
                 "4,12",
                 {
-                    "x": 1.25
+                  "x": 1.25
                 },
                 "4,14"
-            ],
-            [
+              ],
+              [
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,0\n\n\n3,0",
+                "5,0",
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,1\n\n\n3,0",
+                "5,1",
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,2\n\n\n3,0",
+                "5,2",
                 {
-                    "w": 6.25
+                  "w": 6.25
                 },
-                "5,6\n\n\n3,0",
+                "5,5",
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,10\n\n\n3,0",
+                "5,9",
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,11\n\n\n3,0",
+                "5,10",
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,12\n\n\n3,0",
+                "5,11",
                 {
-                    "w": 1.25
+                  "w": 1.25
                 },
-                "5,13\n\n\n3,0",
+                "5,12",
                 {
-                    "x": 0.25
+                  "x": 0.25
                 },
+                "3,13",
                 "5,14",
-                "5,15",
-                "4,15"
-            ]
-        ]
-    }
+                "5,15"
+              ]
+		]
+	}
 }

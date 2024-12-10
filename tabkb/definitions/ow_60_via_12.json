@@ -12,16 +12,16 @@
             "label": "Lighting",
             "content": [
                 {
-                    "label": "Backlight / \u8f74\u706f",
+                    "label": "Backlight",
                     "content": [
                         {
-                        "label": "Brightness / \u4eae\u5ea6",
+                        "label": "Brightness",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_rgb_matrix_brightness", 3, 1]
                         },
                         {
-                        "label": "Effect / \u706f\u6548",
+                        "label": "Effect",
                         "type": "dropdown",
                         "content": ["id_qmk_rgb_matrix_effect", 3, 2],
                         "options": [
@@ -74,14 +74,14 @@
                         },
                         {
                         "showIf": "{id_qmk_rgb_matrix_effect} != 0",
-                        "label": "Effect Speed / \u52a8\u753b\u901f\u5ea6",
+                        "label": "Effect Speed",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_rgb_matrix_effect_speed", 3, 3]
                         },
                         {
                         "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
-                        "label": "Color / \u989c\u8272",
+                        "label": "Color",
                         "type": "color",
                         "content": ["id_qmk_rgb_matrix_color", 3, 4]
                         }
@@ -96,22 +96,22 @@
                     "label": "Magic",
                     "content": [
                         {
-                            "label": "Toggle N-key rollover / \u5168\u952e\u65e0\u51b2\u5f00\u5173\uff08\u975eUSB\u6a21\u5f0f\u614e\u7528\uff09",
+                            "label": "Toggle N-key rollover",
                             "type": "toggle",
                             "content": ["id_cp_magic_nkro", 19, 1]
                         },
                         {
-                            "label": "Toggles the status of the GUI keys / \u3010Win\u3011\u952e\u5f00\u5173\uff08\u6e38\u620f\u65f6\u5173\u95edWin\u952e\uff09",
+                            "label": "Toggles the status of the GUI keys",
                             "type": "toggle",
                             "content": ["id_cp_magic_gui", 19, 2]
                         },
                         {
-                            "label": "Toggle Alt and GUI swap on both sides / \u3010Alt/Cmd\u3011\u4e92\u6362\u3010Win/Opt\u3011",
+                            "label": "Toggle Alt and GUI swap on both sides",
                             "type": "toggle",
                             "content": ["id_cp_magic_alt_gui", 19, 3]
                         },
                         {
-                            "label": "Treat Caps Lock as Control / \u5c06\u3010Caps\u3011\u53d8\u4e3a\u3010Ctrl\u3011",
+                            "label": "Treat Caps Lock as Control",
                             "type": "toggle",
                             "content": ["id_cp_magic_caps_ctrl", 19, 4]
                         }
@@ -121,22 +121,22 @@
                     "label": "Features",
                     "content": [
                         {
-                            "label": "Debounce mode / \u6309\u952e\u53bb\u6296\u6a21\u5f0f",
+                            "label": "Debounce Mode",
                             "type": "dropdown",
                             "options": [
-                                ["Default / \u9ed8\u8ba4", 0],
-                                ["Eager / \u5148\u89e6\u53d1", 3]
+                                ["Default", 0],
+                                ["Eager", 3]
                               ],
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },
                         {
-                            "label": "Debounce delay ms / \u6309\u952e\u53bb\u6296\u65f6\u95f4\u6beb\u79d2",
+                            "label": "Debounce Delay (ms)",
                             "type": "range",
                             "options": [1, 31],
                             "content": ["id_cp_debounce", 17, 7]
                         },
                         {
-                            "label": "Matrix scan frequency / \u77e9\u9635\u626b\u63cf\u9891\u7387",
+                            "label": "Matrix scan frequency",
                             "type": "dropdown",
                             "options": [
                                 ["8k", 0],
@@ -155,36 +155,36 @@
                     "label": "SOCD",
                     "content": [
                         {
-                            "label": "SOCD bind 1 / \u987a\u5e8f\u8fde\u7eed\u89e6\u53d1\u7ed1\u5b9a 1",
+                            "label": "SOCD bind 1",
                             "type": "toggle",
                             "content": ["id_cp_socd_1_state", 23, 4]
                         },
                         {
                             "showIf": "{id_cp_socd_1_state} != 0",
-                            "label": "-- Bind 1 Key A / \u7ed1\u5b9a 1 \u6309\u952e A",
+                            "label": "-- Bind 1 Key A",
                             "type": "keycode",
                             "content": ["id_cp_socd_1_key_a", 23, 5]
                         },
                         {
                             "showIf": "{id_cp_socd_1_state} != 0",
-                            "label": "-- Bind 1 Key B / \u7ed1\u5b9a 1 \u6309\u952e B",
+                            "label": "-- Bind 1 Key B",
                             "type": "keycode",
                             "content": ["id_cp_socd_1_key_b", 23, 6]
                         },
                         {
-                            "label": "SOCD bind 2 / \u987a\u5e8f\u8fde\u7eed\u89e6\u53d1\u7ed1\u5b9a 2",
+                            "label": "SOCD bind 2",
                             "type": "toggle",
                             "content": ["id_cp_socd_2_state", 23, 7]
                         },
                         {
                             "showIf": "{id_cp_socd_2_state} != 0",
-                            "label": "-- Bind 2 Key A / \u7ed1\u5b9a 2 \u6309\u952e A",
+                            "label": "-- Bind 2 Key A",
                             "type": "keycode",
                             "content": ["id_cp_socd_2_key_a", 23, 8]
                         },
                         {
                             "showIf": "{id_cp_socd_2_state} != 0",
-                            "label": "-- Bind 2 Key B / \u7ed1\u5b9a 2 \u6309\u952e B",
+                            "label": "-- Bind 2 Key B",
                             "type": "keycode",
                             "content": ["id_cp_socd_2_key_b", 23, 9]
                         }
@@ -194,20 +194,20 @@
                     "label": "Alt Trig",
                     "content": [
                         {
-                            "label": "Alternating trigger / \u4ea4\u66ff\u8fde\u7eed\u89e6\u53d1",
+                            "label": "Alternating trigger",
                             "type": "toggle",
                             "content": ["id_cp_alt_trig_state", 23, 1]
                         },
                         {
                             "showIf": "{id_cp_alt_trig_state} != 0",
-                            "label": "First trigger ms [1 - 500 ms, default: 50ms] / \u542f\u52a8\u5ef6\u65f6",
+                            "label": "First trigger ms [1 - 500 ms, default: 50ms]",
                             "type": "range",
                             "options": [1, 500],
                             "content": ["id_cp_alt_trig_start_ms", 23, 2]
                         },
                         {
                             "showIf": "{id_cp_alt_trig_state} != 0",
-                            "label": "Repeat trigger ms [1 - 500 ms, default: 30ms] / \u91cd\u590d\u5ef6\u65f6",
+                            "label": "Repeat trigger ms [1 - 500 ms, default: 30ms]",
                             "type": "range",
                             "options": [1, 500],
                             "content": ["id_cp_alt_trig_repeat_ms", 23, 3]
@@ -215,20 +215,20 @@
                     ]
                 },
                 {
-                    "label": "Fireware",
+                    "label": "Firmware",
                     "content": [
                         {
-                            "label": "Clear Settings / \u5220\u9664\u952e\u76d8\u6240\u6709\u914d\u7f6e\uff08\u4f7f\u7528\u540e\u9700\u8981\u91cd\u542f\u952e\u76d8\uff09",
+                            "label": "Clear Settings",
                             "type": "toggle",
                             "content": ["id_cp_eeprom_reset", 16, 2]
                         },
                         {
-                            "label": "Reboot Keyboard / \u91cd\u542f\u952e\u76d8\uff08VIA\u4f1a\u9000\u51fa\uff09",
+                            "label": "Reboot Keyboard",
                             "type": "toggle",
                             "content": ["id_cp_kbd_reboot", 16, 3]
                         },
                         {
-                            "label": "Keyboard DFU / \u8fdb\u5165\u952e\u76d8\u5237\u673a\u6a21\u5f0f\uff08VIA\u4f1a\u9000\u51fa\uff09",
+                            "label": "Keyboard DFU",
                             "type": "toggle",
                             "content": ["id_cp_kbd_dfu", 16, 1]
                         }
@@ -239,7 +239,7 @@
     ],
     "customKeycodes": [
         {"name": "Light mode",
-         "title": "[LNT_MOD] Toggle RGB Matrix or Light mode control / \u5207\u6362\u8f74\u706f\u4e0e\u6c1b\u56f4\u706f\u914d\u7f6e\u6a21\u5f0f",
+         "title": "[LNT_MOD] Toggle RGB Matrix or Light mode control",
          "shortName": "LgtMod"
         }
     ],

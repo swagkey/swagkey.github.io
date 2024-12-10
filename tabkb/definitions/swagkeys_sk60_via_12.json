@@ -39,7 +39,7 @@
           "label": "Features",
           "content": [
             {
-              "label": "Debounce delay ms",
+              "label": "Debounce Delay (ms)",
               "type": "dropdown",
               "options": [
                 ["1 ms", 1],
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "label": "Fireware",
+          "label": "Firmware",
           "content": [
             {
               "label": "Clear Settings",

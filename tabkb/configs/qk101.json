@@ -1,7 +1,7 @@
 {
-  "name": "QK80 MK2",
-  "vendorId": "0x514B",
-  "productId": "0x4D02",
+	"name": "QK101",
+	"vendorId": "0x514B",
+	"productId": "0x4D04",
   "firmware": "0.0.0",
   "cdc": true,
   "matrixLighting": {
@@ -69,27 +69,27 @@
   },
   "tapDance":  [
     {"name": "TD (2.4G)",
-     "title": "Hold and short-press to pair, long-press to delete pairing memory.",
+     "title": "Hold and short-press to pair, long-press to delete pairing memory. / 短按配对连接，长按删除配对信息",
      "shortName": "TD(2.4G)"
     },
     {"name": "TD (BLE1)",
-     "title": "Hold and short-press to pair, long-press to delete pairing memory.",
+     "title": "Hold and short-press to pair, long-press to delete pairing memory. / 短按配对连接，长按删除配对信息",
      "shortName": "TD(BLE1)"
     },
     {"name": "TD (BLE2)",
-     "title": "Hold and short-press to pair, long-press to delete pairing memory.",
+     "title": "Hold and short-press to pair, long-press to delete pairing memory. / 短按配对连接，长按删除配对信息",
      "shortName": "TD(BLE2)"
     },
     {"name": "TD (BLE3)",
-     "title": "Hold and short-press to pair, long-press to delete pairing memory.",
+     "title": "Hold and short-press to pair, long-press to delete pairing memory. / 短按配对连接，长按删除配对信息",
      "shortName": "TD(BLE3)"
     },
     {"name": "TD (REST)",
-     "title": "Long-press 3 seconds to delete all profile and settings.",
+     "title": "Long-press 3 seconds to delete all profile and settings. / 长按3秒删除键盘所有配置",
      "shortName": "TD(REST)"
     },
     {"name": "TD (WIN)",
-     "title": "Hold and short-press to switch win/mac, long-press to lock/unlock windows key.",
+     "title": "Hold and short-press to switch win/mac, long-press to lock/unlock windows key. / 短按切换win/mac模式，长按锁/解锁win键",
      "shortName": "TD(WIN)"
     }
   ]
