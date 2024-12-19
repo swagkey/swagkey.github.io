@@ -244,6 +244,20 @@
             ]
         }
     ],
+  "customKeycodes": [
+      {"name": "ST Toggle",
+       "title": "[ST_TOG] Toggle Snap Tap (SOCD)",
+       "shortName": "STTog"
+      },
+      {"name": "MF 1K",
+        "title": "[MF_1K] Turn on 1K mode",
+        "shortName": "MF1K"
+      },
+      {"name": "MF 8K",
+        "title": "[MF_8K] Turn on 8K mode",
+        "shortName": "MF8K"
+      }
+  ],
 	"layouts": {
 		"keymap": [
       [

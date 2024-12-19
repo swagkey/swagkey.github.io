@@ -637,5 +637,16 @@
     "vendorId": "0x4F57",
     "productId": "0x4C4B",
     "actuation": true
+  },
+  {
+    "name": "Wooting87 8K",
+    "vendorId": "0x54AB",
+    "productId": "0x7787",
+    "tapDance": [
+      {
+        "name": "TD REST",
+        "shortName": "TD(REST)"
+      }
+    ]
   }
 ]
