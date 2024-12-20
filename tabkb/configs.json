@@ -50,6 +50,7 @@
     "screen": {
       "menus": [
         "video",
+        "image",
         "slider"
       ],
       "fileTypes": [
@@ -61,6 +62,14 @@
           "owidth": 160,
           "oheight": 96,
           "animFramesLimit": 400
+        },
+        {
+          "label": "Custom Image",
+          "type": "image",
+          "format": "ABKG",
+          "orientations": 0,
+          "owidth": 160,
+          "oheight": 96
         },
         {
           "label": "Custom Slider",
