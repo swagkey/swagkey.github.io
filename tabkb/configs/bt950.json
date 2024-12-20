@@ -5,12 +5,21 @@
   "firmware": "0.0.0",
   "cdc": true,
   "screen": {
-    "menus": ["video"],
+    "menus": ["video", "slider"],
     "fileTypes": [
       {
-        "label": "动画",
+        "label": "Custom Animation",
         "type": "video",
         "format": "ANIM",
+        "orientations": 0,
+        "owidth": 160,
+        "oheight": 96,
+        "animFramesLimit": 400
+      },
+      {
+        "label": "Custom Slider",
+        "type": "slider",
+        "format": "ANPS",
         "orientations": 0,
         "owidth": 160,
         "oheight": 96,
