@@ -11,7 +11,9 @@
     "shareApi": "https://novel.qwertykeys.com/api/leds"
   },
   "screen": {
-    "menus": ["video", "image", "slider"],
+    "menus": ["video", "image", "slider", "theme"],
+    "maxOutputSize": 32768000,
+    "maxFgFileCount": 6,
     "fileTypes": [
       {
         "label": "Custom Animation",
@@ -64,6 +66,22 @@
         "owidth": 320,
         "oheight": 172,
         "animFramesLimit": 300
+      },
+      {
+        "label": "Background",
+        "type": "theme",
+        "format": "IAMT",
+        "orientations": 0,
+        "owidth": 320,
+        "oheight": 172,
+        "animFramesLimit": -1
+      },
+      {
+        "label": "Foreground",
+        "type": "theme",
+        "format": "IAFT",
+        "orientations": 0,
+        "animFramesLimit": -1
       }
     ]
   },

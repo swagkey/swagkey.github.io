@@ -195,6 +195,13 @@
     }
   },
   {
+    "name": "OW ALICE",
+    "vendorId": "0x4F57",
+    "productId": "0x4110",
+    "firmware": "0.0.0",
+    "cdc": true
+  },
+  {
     "name": "OW suit hal",
     "vendorId": "0x4F57",
     "productId": "0x5380",
@@ -216,8 +223,11 @@
       "menus": [
         "video",
         "image",
-        "slider"
+        "slider",
+        "theme"
       ],
+      "maxOutputSize": 32768000,
+      "maxFgFileCount": 6,
       "fileTypes": [
         {
           "label": "Custom Animation",
@@ -270,6 +280,22 @@
           "owidth": 320,
           "oheight": 172,
           "animFramesLimit": 300
+        },
+        {
+          "label": "Background",
+          "type": "theme",
+          "format": "IAMT",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": -1
+        },
+        {
+          "label": "Foreground",
+          "type": "theme",
+          "format": "IAFT",
+          "orientations": 0,
+          "animFramesLimit": -1
         }
       ]
     },
@@ -466,9 +492,12 @@
       "menus": [
         "video",
         "image",
-        "slider"
+        "slider",
+        "theme"
       ],
       "swapBit": true,
+      "maxOutputSize": 32768000,
+      "maxFgFileCount": 6,
       "fileTypes": [
         {
           "label": "屏幕动画 Area1",
@@ -520,6 +549,22 @@
           "orientations": 0,
           "owidth": 80,
           "oheight": 112,
+          "animFramesLimit": -1
+        },
+        {
+          "label": "Background",
+          "type": "theme",
+          "format": "IAMT",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": -1
+        },
+        {
+          "label": "Foreground",
+          "type": "theme",
+          "format": "IAFT",
+          "orientations": 0,
           "animFramesLimit": -1
         }
       ]
