@@ -1,10 +1,11 @@
 {
-    "name": "Wooting87 8K",
-	"vendorId": "0x54AB",
-	"productId": "0x7787",
-    "tapDance":  [
-        {"name": "TD REST",
-         "shortName": "TD(REST)"
-        }
-      ]
+  "name": "Wooting87 8K",
+  "vendorId": "0x54AB",
+  "productId": "0x7787",
+  "tapDance": [
+    {
+      "name": "TD REST",
+      "title": "TD(REST)"
+    }
+  ]
 }

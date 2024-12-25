@@ -34,5 +34,31 @@
         "animFramesLimit": 400
       }
     ]
-  }
+  },
+  "tapDance": [
+    {
+      "name": "HT_G24",
+      "title": "HT_G24"
+    },
+    {
+      "name": "HT_BLE1",
+      "title": "HT_BLE1"
+    },
+    {
+      "name": "HT_BLE2",
+      "title": "HT_BLE2"
+    },
+    {
+      "name": "HT_BLE3",
+      "title": "HT_BLE3"
+    },
+    {
+      "name": "HT_REST",
+      "title": "HT_REST"
+    },
+    {
+      "name": "HT_POWR",
+      "title": "HT_POWR"
+    }
+  ]
 }

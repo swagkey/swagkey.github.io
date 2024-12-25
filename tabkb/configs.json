@@ -81,7 +81,64 @@
           "animFramesLimit": 400
         }
       ]
-    }
+    },
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
+  },
+  {
+    "name": "KB88 TAI",
+    "vendorId": "0x54AB",
+    "productId": "0xC987",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
   },
   {
     "name": "Twos Hotot",
@@ -168,6 +225,37 @@
         "orientations": 0,
         "owidth": 96,
         "oheight": 88
+      }
+    ]
+  },
+  {
+    "name": "Magic87",
+    "vendorId": "0x54AB",
+    "productId": "0x6D87",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
       }
     ]
   },
@@ -703,13 +791,75 @@
     "actuation": true
   },
   {
+    "name": "Transition mp",
+    "vendorId": "0x54AB",
+    "productId": "0x544D",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
+  },
+  {
+    "name": "Virtual 80",
+    "vendorId": "0x54AB",
+    "productId": "0x7680",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
+  },
+  {
     "name": "Wooting87 8K",
     "vendorId": "0x54AB",
     "productId": "0x7787",
     "tapDance": [
       {
         "name": "TD REST",
-        "shortName": "TD(REST)"
+        "title": "TD(REST)"
       }
     ]
   }
