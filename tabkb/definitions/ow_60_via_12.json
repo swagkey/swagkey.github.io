@@ -125,7 +125,11 @@
                             "type": "dropdown",
                             "options": [
                                 ["Default", 0],
-                                ["Eager", 3]
+                                ["SYM_DEFER_PK", 1],
+                                ["SYM_DEFER_PR", 2],
+                                ["SYM_EAGER_PK", 3],
+                                ["SYM_EAGER_PR", 4],
+                                ["ASYM_EAGER_DEFER_PK", 5]
                               ],
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },

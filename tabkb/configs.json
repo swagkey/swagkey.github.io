@@ -189,6 +189,37 @@
     "actuation": true
   },
   {
+    "name": "KF206",
+    "vendorId": "0x54AB",
+    "productId": "0xF206",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
+  },
+  {
     "vendorId": "0x4A4F",
     "productId": "0x4D64",
     "firmware": "0.0.0",
