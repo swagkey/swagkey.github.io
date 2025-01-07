@@ -365,6 +365,10 @@
         {"name": "Info",
          "title": "[INF_OUT] Print the current KBD information",
          "shortName": "Info"
+        },
+        {"name": "F-Zone",
+         "title": "[TFA_TOG] Toggle Number or F zone",
+         "shortName": "FZon"
         }
     ],
 	"layouts": {

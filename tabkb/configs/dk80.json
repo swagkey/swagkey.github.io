@@ -1,0 +1,31 @@
+{
+	"name": "DK80",
+	"vendorId": "0x54AB",
+	"productId": "0xD080",
+  "tapDance": [
+    {
+      "name": "HT_G24",
+      "title": "HT_G24"
+    },
+    {
+      "name": "HT_BLE1",
+      "title": "HT_BLE1"
+    },
+    {
+      "name": "HT_BLE2",
+      "title": "HT_BLE2"
+    },
+    {
+      "name": "HT_BLE3",
+      "title": "HT_BLE3"
+    },
+    {
+      "name": "HT_REST",
+      "title": "HT_REST"
+    },
+    {
+      "name": "HT_POWR",
+      "title": "HT_POWR"
+    }
+  ]
+}

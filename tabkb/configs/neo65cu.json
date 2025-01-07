@@ -1,0 +1,35 @@
+{
+	"name": "Neo65 Cu",
+	"vendorId": "0xE560",
+	"productId": "0xE065",
+  "tapDance": [
+    {
+      "name": "HT_G24",
+      "title": "HT_G24"
+    },
+    {
+      "name": "HT_BLE1",
+      "title": "HT_BLE1"
+    },
+    {
+      "name": "HT_BLE2",
+      "title": "HT_BLE2"
+    },
+    {
+      "name": "HT_BLE3",
+      "title": "HT_BLE3"
+    },
+    {
+      "name": "HT_REST",
+      "title": "HT_REST"
+    },
+    {
+      "name": "HT_POWR",
+      "title": "HT_POWR"
+    },
+    {
+      "name": "HT_WIN",
+      "title": "HT_WIN"
+    }
+  ]
+}
