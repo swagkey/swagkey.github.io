@@ -415,6 +415,15 @@
       "maxFgFileCount": 6,
       "fileTypes": [
         {
+          "label": "Theme",
+          "type": "video",
+          "format": "ANIT",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": 300
+        },
+        {
           "label": "Custom Animation",
           "type": "video",
           "format": "ANIM",
@@ -425,12 +434,11 @@
         },
         {
           "label": "Theme",
-          "type": "video",
-          "format": "ANIT",
+          "type": "image",
+          "format": "ABKT",
           "orientations": 0,
           "owidth": 320,
-          "oheight": 172,
-          "animFramesLimit": 300
+          "oheight": 172
         },
         {
           "label": "Custom Image",
@@ -442,11 +450,12 @@
         },
         {
           "label": "Theme",
-          "type": "image",
-          "format": "ABKT",
+          "type": "slider",
+          "format": "ANPT",
           "orientations": 0,
           "owidth": 320,
-          "oheight": 172
+          "oheight": 172,
+          "animFramesLimit": 300
         },
         {
           "label": "Custom Slider",
@@ -456,15 +465,6 @@
           "owidth": 320,
           "oheight": 172,
           "animFramesLimit": 500
-        },
-        {
-          "label": "Theme",
-          "type": "slider",
-          "format": "ANPT",
-          "orientations": 0,
-          "owidth": 320,
-          "oheight": 172,
-          "animFramesLimit": 300
         },
         {
           "label": "Background",
@@ -537,6 +537,15 @@
       ],
       "fileTypes": [
         {
+          "label": "Theme",
+          "type": "video",
+          "format": "ANIT",
+          "orientations": 0,
+          "owidth": 320,
+          "oheight": 172,
+          "animFramesLimit": 300
+        },
+        {
           "label": "Custom Animation",
           "type": "video",
           "format": "ANIM",
@@ -547,12 +556,11 @@
         },
         {
           "label": "Theme",
-          "type": "video",
-          "format": "ANIT",
+          "type": "image",
+          "format": "ABKT",
           "orientations": 0,
           "owidth": 320,
-          "oheight": 172,
-          "animFramesLimit": 300
+          "oheight": 172
         },
         {
           "label": "Custom Image",
@@ -564,11 +572,12 @@
         },
         {
           "label": "Theme",
-          "type": "image",
-          "format": "ABKT",
+          "type": "slider",
+          "format": "ANPT",
           "orientations": 0,
           "owidth": 320,
-          "oheight": 172
+          "oheight": 172,
+          "animFramesLimit": 300
         },
         {
           "label": "Custom Slider",
@@ -578,15 +587,6 @@
           "owidth": 320,
           "oheight": 172,
           "animFramesLimit": 500
-        },
-        {
-          "label": "Theme",
-          "type": "slider",
-          "format": "ANPT",
-          "orientations": 0,
-          "owidth": 320,
-          "oheight": 172,
-          "animFramesLimit": 300
         }
       ]
     },
