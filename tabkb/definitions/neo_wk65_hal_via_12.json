@@ -1,0 +1,291 @@
+{
+	"name": "Neo65 Hall",
+	"vendorId": "0xE560",
+	"productId": "0xEA65",
+	"matrix": {
+		"rows": 5,
+		"cols": 16
+	},
+    "menus": [
+        {
+            "label": "Config",
+            "content": [
+                {
+                    "label": "Magic",
+                    "content": [
+                        {
+                            "label": "Toggle N-key rollover",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_nkro", 19, 1]
+                        },
+                        {
+                            "label": "Toggles the status of the GUI keys",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_gui", 19, 2]
+                        },
+                        {
+                            "label": "Toggle Alt and GUI swap on both sides",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_alt_gui", 19, 3]
+                        },
+                        {
+                            "label": "Treat Caps Lock as Control",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_caps_ctrl", 19, 4]
+                        }
+                    ]
+                },
+                {
+                    "label": "Features",
+                    "content": [
+                        {
+                            "label": "Enable F Zone",
+                            "type": "toggle",
+                            "content": ["id_cp_switch_number_f12", 24, 1]
+                        },
+                        {
+                            "label": "Debounce Delay (ms)",
+                            "type": "dropdown",
+                            "options": [
+                                ["1 ms", 1],
+                                ["2 ms", 2],
+                                ["3 ms", 3],
+                                ["4 ms", 4],
+                                ["5 ms", 5],
+                                ["6 ms", 6],
+                                ["7 ms", 7]
+                              ],
+                            "content": ["id_cp_debounce", 17, 7]
+                        },
+                        {
+                            "label": "Matrix scan frequency",
+                            "type": "dropdown",
+                            "options": [
+                                ["8k", 0],
+                                ["6k", 1],
+                                ["5k", 2],
+                                ["4k", 3],
+                                ["3k", 5],
+                                ["2k", 10],
+                                ["1k", 22]
+                              ],
+                            "content": ["id_cp_matrix_frequency", 17, 8]
+                        }
+                    ]
+                },
+                {
+                    "label": "SOCD",
+                    "content": [
+                        {
+                            "label": "SOCD bind 1",
+                            "type": "toggle",
+                            "content": ["id_cp_socd_1_state", 23, 4]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_1_state} != 0",
+                            "label": "-- Bind 1 Key A",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_1_key_a", 23, 5]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_1_state} != 0",
+                            "label": "-- Bind 1 Key B",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_1_key_b", 23, 6]
+                        },
+                        {
+                            "label": "SOCD bind 2",
+                            "type": "toggle",
+                            "content": ["id_cp_socd_2_state", 23, 7]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_2_state} != 0",
+                            "label": "-- Bind 2 Key A",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_2_key_a", 23, 8]
+                        },
+                        {
+                            "showIf": "{id_cp_socd_2_state} != 0",
+                            "label": "-- Bind 2 Key B",
+                            "type": "keycode",
+                            "content": ["id_cp_socd_2_key_b", 23, 9]
+                        }
+                    ]
+                },
+                {
+                    "label": "Alt Trig",
+                    "content": [
+                        {
+                            "label": "Alternating trigger",
+                            "type": "toggle",
+                            "content": ["id_cp_alt_trig_state", 23, 1]
+                        },
+                        {
+                            "showIf": "{id_cp_alt_trig_state} != 0",
+                            "label": "First trigger ms [1 - 500 ms, default: 50ms]",
+                            "type": "range",
+                            "options": [1, 500],
+                            "content": ["id_cp_alt_trig_start_ms", 23, 2]
+                        },
+                        {
+                            "showIf": "{id_cp_alt_trig_state} != 0",
+                            "label": "Repeat trigger ms [1 - 500 ms, default: 50ms]",
+                            "type": "range",
+                            "options": [1, 500],
+                            "content": ["id_cp_alt_trig_repeat_ms", 23, 3]
+                        }
+                    ]
+                },
+                {
+                    "label": "Firmware",
+                    "content": [
+                        {
+                            "label": "Clear Settings",
+                            "type": "toggle",
+                            "content": ["id_cp_eeprom_reset", 16, 2]
+                        },
+                        {
+                            "label": "Reboot Keyboard",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_reboot", 16, 3]
+                        },
+                        {
+                            "label": "Keyboard DFU",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_dfu", 16, 1]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "customKeycodes": [
+        {"name": "F-Zone",
+         "title": "[TFA_TOG] Toggle Number or F zone",
+         "shortName": "FZon"
+        }
+    ],
+	"layouts": {
+        "keymap": [
+            [
+                "0,0",
+                "0,1",
+                "0,2",
+                "0,3",
+                "0,4",
+                "0,5",
+                "0,6",
+                "0,7",
+                "0,8",
+                "0,9",
+                "0,10",
+                "0,11",
+                "0,12",
+                {
+                "w": 2
+                },
+                "0,13",
+                "0,14"
+            ],
+            [
+                {
+                "w": 1.5
+                },
+                "1,0",
+                "1,1",
+                "1,2",
+                "1,3",
+                "1,4",
+                "1,5",
+                "1,6",
+                "1,7",
+                "1,8",
+                "1,9",
+                "1,10",
+                "1,11",
+                "1,12",
+                {
+                "w": 1.5
+                },
+                "1,13",
+                "1,14"
+            ],
+            [
+                {
+                "w": 1.75
+                },
+                "2,0",
+                "2,1",
+                "2,2",
+                "2,3",
+                "2,4",
+                "2,6",
+                "2,7",
+                "2,8",
+                "2,9",
+                "2,10",
+                "2,11",
+                "2,12",
+                {
+                "w": 2.25
+                },
+                "2,13",
+                "2,14"
+            ],
+            [
+                {
+                "w": 2.25
+                },
+                "3,0",
+                "3,2",
+                "3,3",
+                "3,4",
+                "3,5",
+                "3,6",
+                "3,7",
+                "3,8",
+                "3,9",
+                "3,10",
+                "3,11",
+                {
+                "w": 1.75
+                },
+                "3,12",
+                "3,13",
+                "3,14"
+            ],
+            [
+                {
+                "w": 1.25
+                },
+                "4,0",
+                {
+                "w": 1.25
+                },
+                "4,1",
+                {
+                "w": 1.25
+                },
+                "4,2",
+                {
+                "w": 6.25
+                },
+                "4,6",
+                {
+                "w": 1.25
+                },
+                "4,10",
+                {
+                "w": 1.25
+                },
+                "4,11",
+                {
+                "x": 0.5
+                },
+                "4,12",
+                "4,13",
+                "4,14"
+            ]
+        ]
+	}
+}

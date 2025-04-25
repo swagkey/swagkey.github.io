@@ -42,6 +42,37 @@
     }
   },
   {
+    "name": "Bread65",
+    "vendorId": "0x54AB",
+    "productId": "0xBD65",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
+  },
+  {
     "name": "KB950 PRO",
     "vendorId": "0x54AB",
     "productId": "0xB950",
@@ -113,6 +144,43 @@
     "name": "KB88 TAI",
     "vendorId": "0x54AB",
     "productId": "0xC987",
+    "tapDance": [
+      {
+        "name": "HT_G24",
+        "title": "HT_G24"
+      },
+      {
+        "name": "HT_BLE1",
+        "title": "HT_BLE1"
+      },
+      {
+        "name": "HT_BLE2",
+        "title": "HT_BLE2"
+      },
+      {
+        "name": "HT_BLE3",
+        "title": "HT_BLE3"
+      },
+      {
+        "name": "HT_REST",
+        "title": "HT_REST"
+      },
+      {
+        "name": "HT_POWR",
+        "title": "HT_POWR"
+      }
+    ]
+  },
+  {
+    "name": "Chow75 HE",
+    "vendorId": "0xC480",
+    "productId": "0xC75E",
+    "actuation": true
+  },
+  {
+    "name": "DK60",
+    "vendorId": "0x54AB",
+    "productId": "0xD060",
     "tapDance": [
       {
         "name": "HT_G24",
@@ -343,6 +411,18 @@
         }
       ]
     }
+  },
+  {
+    "name": "Neo65 Hall",
+    "vendorId": "0xE560",
+    "productId": "0xEB65",
+    "actuation": true
+  },
+  {
+    "name": "Neo65 Hall",
+    "vendorId": "0xE560",
+    "productId": "0xEA65",
+    "actuation": true
   },
   {
     "name": "Neo65 Cu",
@@ -885,6 +965,12 @@
     "name": "OW link65ec",
     "vendorId": "0x4F57",
     "productId": "0x4C4B",
+    "actuation": true
+  },
+  {
+    "name": "Transition lite HE",
+    "vendorId": "0x534B",
+    "productId": "0x580E",
     "actuation": true
   },
   {

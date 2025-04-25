@@ -11,73 +11,6 @@
             "label": "Lighting",
             "content": [
                 {
-                    "label": "indicator",
-                    "content": [
-                        {
-                        "label": "Brightness",
-                        "type": "range",
-                        "options": [0, 255],
-                        "content": ["id_qmk_custom_rgblight_brightness", 27, 1]
-                        },
-                        {
-                        "label": "Effect",
-                        "type": "dropdown",
-                        "content": ["id_qmk_custom_rgblight_effect", 27, 2],
-                        "options": [
-                            "All Off",
-                            "Solid Color",
-                            "Breathing 1",
-                            "Breathing 2",
-                            "Breathing 3",
-                            "Breathing 4",
-                            "Rainbow Mood 1",
-                            "Rainbow Mood 2",
-                            "Rainbow Mood 3",
-                            "Rainbow Swirl 1",
-                            "Rainbow Swirl 2",
-                            "Rainbow Swirl 3",
-                            "Rainbow Swirl 4",
-                            "Rainbow Swirl 5",
-                            "Rainbow Swirl 6",
-                            "Snake 1",
-                            "Snake 2",
-                            "Snake 3",
-                            "Snake 4",
-                            "Snake 5",
-                            "Snake 6",
-                            "Knight 1",
-                            "Knight 2",
-                            "Knight 3",
-                            "Christmas",
-                            "Gradient 1",
-                            "Gradient 2",
-                            "Gradient 3",
-                            "Gradient 4",
-                            "Gradient 5",
-                            "Gradient 6",
-                            "Gradient 7",
-                            "Gradient 8",
-                            "Gradient 9",
-                            "Gradient 10",
-                            "RGB Test",
-                            "Alternating",
-                            "Twinkle 1",
-                            "Twinkle 2",
-                            "Twinkle 3",
-                            "Twinkle 4",
-                            "Twinkle 5",
-                            "Twinkle 6"
-                        ]
-                        },
-                        {
-                        "showIf": "{id_qmk_custom_rgblight_effect} != 0 && {id_qmk_custom_rgblight_effect} != 35",
-                        "label": "Color",
-                        "type": "color",
-                        "content": ["id_qmk_custom_rgblight_color", 27, 4]
-                        }
-                    ]
-                },
-                {
                     "label": "Underglow",
                     "content": [
                         {
@@ -143,6 +76,73 @@
                         "content": ["id_qmk_rgblight_color", 21, 4]
                         }
                     ]
+                },
+                {
+                    "label": "Indicator",
+                    "content": [
+                        {
+                        "label": "Brightness",
+                        "type": "range",
+                        "options": [0, 255],
+                        "content": ["id_qmk_custom_rgblight_brightness", 27, 1]
+                        },
+                        {
+                        "label": "Effect",
+                        "type": "dropdown",
+                        "content": ["id_qmk_custom_rgblight_effect", 27, 2],
+                        "options": [
+                            "All Off",
+                            "Solid Color",
+                            "Breathing 1",
+                            "Breathing 2",
+                            "Breathing 3",
+                            "Breathing 4",
+                            "Rainbow Mood 1",
+                            "Rainbow Mood 2",
+                            "Rainbow Mood 3",
+                            "Rainbow Swirl 1",
+                            "Rainbow Swirl 2",
+                            "Rainbow Swirl 3",
+                            "Rainbow Swirl 4",
+                            "Rainbow Swirl 5",
+                            "Rainbow Swirl 6",
+                            "Snake 1",
+                            "Snake 2",
+                            "Snake 3",
+                            "Snake 4",
+                            "Snake 5",
+                            "Snake 6",
+                            "Knight 1",
+                            "Knight 2",
+                            "Knight 3",
+                            "Christmas",
+                            "Gradient 1",
+                            "Gradient 2",
+                            "Gradient 3",
+                            "Gradient 4",
+                            "Gradient 5",
+                            "Gradient 6",
+                            "Gradient 7",
+                            "Gradient 8",
+                            "Gradient 9",
+                            "Gradient 10",
+                            "RGB Test",
+                            "Alternating",
+                            "Twinkle 1",
+                            "Twinkle 2",
+                            "Twinkle 3",
+                            "Twinkle 4",
+                            "Twinkle 5",
+                            "Twinkle 6"
+                        ]
+                        },
+                        {
+                        "showIf": "{id_qmk_custom_rgblight_effect} != 0 && {id_qmk_custom_rgblight_effect} != 35",
+                        "label": "Color",
+                        "type": "color",
+                        "content": ["id_qmk_custom_rgblight_color", 27, 4]
+                        }
+                    ]
                 }
             ]
         },
@@ -187,17 +187,10 @@
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },
                         {
-                            "label": "Debounce delay level",
-                            "type": "dropdown",
-                            "options": [
-                                ["Level 0", 1],
-                                ["Level 1", 10],
-                                ["Level 2", 13],
-                                ["Level 3", 17],
-                                ["Level 4", 20],
-                                ["Level 5", 25]
-                            ],
-                            "content": ["id_cp_debounce", 17, 7]
+                          "label": "Debounce Delay (ms)",
+                          "type": "range",
+                          "options": [1, 31],
+                          "content": ["id_cp_debounce", 17, 7]
                         },
                         {
                             "label": "Matrix scan frequency",
@@ -212,6 +205,12 @@
                                 ["1k", 31]
                               ],
                             "content": ["id_cp_matrix_frequency", 17, 8]
+                        },
+                        {
+                            "label": "Wireless channel",
+                            "type": "range",
+                            "options": [1, 99],
+                            "content": ["id_cp_wireless_channel", 17, 20]
                         }
                     ]
                 },
@@ -366,10 +365,58 @@
          "title": "[RGB_RMD] Split rgb switch",
          "shortName": "SplitRgbSwh"
         },
-        {"name": "Pod rgblight mode",
-         "title": "[RGB_PMD] pod rgblight mode",
-         "shortName": "PodRgbMod"
-        }
+        {"name": "AI Key0",
+         "title": "AI shortcut Key0",
+         "shortName": "AIKey0"
+        },
+        {"name": "AI Key1",
+         "title": "AI shortcut Key1",
+         "shortName": "AIKey1"
+        },
+        {"name": "AI Key2",
+         "title": "AI shortcut Key2",
+         "shortName": "AIKey2"
+        },
+        {"name": "AI Key3",
+        "title": "AI shortcut Key3",
+        "shortName": "AIKey3"
+       },
+       {"name": "AI Key4",
+       "title": "AI shortcut Key4",
+       "shortName": "AIKey4"
+      },
+      {"name": "AI Key5",
+      "title": "AI shortcut Key5",
+      "shortName": "AIKey5"
+      },
+      {"name": "AI Key6",
+      "title": "AI shortcut Key6",
+      "shortName": "AIKey6"
+      },
+      {"name": "AI Key7",
+      "title": "AI shortcut Key7",
+      "shortName": "AIKey7"
+      },
+      {"name": "AI Key8",
+      "title": "AI shortcut Key8",
+      "shortName": "AIKey8"
+      },
+      {"name": "AI Key9",
+      "title": "AI shortcut Key9",
+      "shortName": "AIKey9"
+      },
+      {"name": "AI Key10",
+      "title": "AI shortcut Key10",
+      "shortName": "AIKey10"
+      },
+      {"name": "AI Key11",
+      "title": "AI shortcut Key11",
+      "shortName": "AIKey11"
+      },
+      {"name": "AI Key12",
+      "title": "AI shortcut Key120",
+      "shortName": "AIKey12"
+      }
     ],
 	"layouts": {
     "labels": [
@@ -601,16 +648,16 @@
             ],
             [
               {
-                "y": -0.7999999999999998,
-                "x": 4.300000000000001,
-                "w": 0.75,
-                "h": 0.5
+                "y": -0.94,
+                "x": 4.25,
+                "w": 0.9,
+                "h": 0.9
               },
               "2,7"
             ],
             [
               {
-                "y": -0.20000000000000018,
+                "y": -0.0600000000000005,
                 "x": 0.5499999999999998
               },
               "3,3",
@@ -662,16 +709,16 @@
             ],
             [
               {
-                "y": -0.8500000000000001,
-                "x": -4.199999999999999,
-                "w": 0.75,
-                "h": 0.5
+                "y": -0.9299999999999997,
+                "x": -4.300000000000001,
+                "w": 0.9,
+                "h": 0.9
               },
               "2,8"
             ],
             [
               {
-                "y": -0.14999999999999947,
+                "y": -0.07000000000000028,
                 "x": -3.6500000000000004
               },
               "3,8",
