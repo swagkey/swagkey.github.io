@@ -1,0 +1,38 @@
+{
+	"name": "Transition 106",
+	"vendorId": "0x534B",
+	"productId": "0xA106",
+  "firmware": "0.0.0",
+  "cdc": true,
+  "screen": {
+    "menus": ["video", "image", "slider"],
+    "fileTypes": [
+      {
+        "label": "Custom Animation",
+        "type": "video",
+        "format": "ANIM",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320,
+        "animFramesLimit": 400
+      },
+      {
+        "label": "Custom Image",
+        "type": "image",
+        "format": "ABKG",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320
+      },
+      {
+        "label": "Custom Slider",
+        "type": "slider",
+        "format": "ANPS",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320,
+        "animFramesLimit": 400
+      }
+    ]
+  }
+}
