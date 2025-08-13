@@ -153,17 +153,16 @@
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },
                         {
-                            "label": "Debounce Delay (ms)",
+                            "label": "Debounce delay level",
                             "type": "dropdown",
                             "options": [
-                                ["1 ms", 1],
-                                ["2 ms", 2],
-                                ["3 ms", 3],
-                                ["4 ms", 4],
-                                ["5 ms", 5],
-                                ["6 ms", 6],
-                                ["7 ms", 7]
-                              ],
+                                ["Level 0", 1],
+                                ["Level 1", 10],
+                                ["Level 2", 13],
+                                ["Level 3", 17],
+                                ["Level 4", 20],
+                                ["Level 5", 25]
+                            ],
                             "content": ["id_cp_debounce", 17, 7]
                         }
                     ]
@@ -345,6 +344,38 @@
         {"name": "Info",
          "title": "[INF_OUT] Print the current KBD information",
          "shortName": "Info"
+        },
+        {"name": "Screen Toggle",
+         "title": "[TGI_TOG] Screen Toggle",
+         "shortName": "TGI_TOG"
+        },
+        {"name": "Screen Mode",
+         "title": "[TGI_MOD] Screen Mode Switch",
+         "shortName": "TGI_MOD"
+        },
+        {"name": "Screen Enter key",
+         "title": "[TGI_ENT] Screen Enter key",
+         "shortName": "TGI_ENT"
+        },
+        {"name": "Screen Exit key",
+         "title": "[TGI_EXT] Screen Exit key",
+         "shortName": "TGI_EXT"
+        },
+        {"name": "Screen Up key",
+         "title": "[TGI_UP] Screen Up key",
+         "shortName": "TGI_UP"
+        },
+        {"name": "Screen Down key",
+         "title": "[TGI_DN] Screen Down key",
+         "shortName": "TGI_DN"
+        },
+        {"name": "Screen Left key",
+         "title": "[TGI_LT] Screen Left key",
+         "shortName": "TGI_LT"
+        },
+        {"name": "Screen Right key",
+         "title": "[TGI_RT] Screen Right key",
+         "shortName": "TGI_RT"
         }
     ],
 	"layouts": {
