@@ -42,13 +42,6 @@
     }
   },
   {
-    "name": "MMD AR84 Gaming Keyboard",
-    "vendorId": "0x4D44",
-    "productId": "0xA84E",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
     "name": "Bread65",
     "vendorId": "0x54AB",
     "productId": "0xBD65",
@@ -182,8 +175,7 @@
     "name": "Chow75 HE",
     "vendorId": "0xC480",
     "productId": "0xC75E",
-    "actuation": true,
-    "firmware": "0.0.0"
+    "actuation": true
   },
   {
     "name": "DK60",
@@ -246,76 +238,6 @@
         "title": "HT_POWR"
       }
     ]
-  },
-  {
-    "name": "EVO 104",
-    "vendorId": "0xE560",
-    "productId": "0xE104",
-    "firmware": "0.0.0",
-    "cdc": true,
-    "matrixLighting": {
-      "rows": 8,
-      "cols": 24,
-      "cdc": true,
-      "texts": {
-        "count": 5,
-        "length": 30
-      }
-    }
-  },
-  {
-    "name": "EVO_WORX98",
-    "vendorId": "0xE560",
-    "productId": "0xE98B",
-    "firmware": {
-      "version": "1.0.0",
-      "file": [],
-      "masterBoot": [
-        "0xe560",
-        "0xe98d"
-      ]
-    },
-    "cdc": true,
-    "matrixLighting": {
-      "rows": 5,
-      "cols": 5,
-      "cdc": true
-    },
-    "screen": {
-      "menus": [
-        "video",
-        "image",
-        "slider"
-      ],
-      "fileTypes": [
-        {
-          "label": "Custom Animation",
-          "type": "video",
-          "format": "ANIM",
-          "orientations": 0,
-          "owidth": 100,
-          "oheight": 310,
-          "animFramesLimit": 400
-        },
-        {
-          "label": "Custom Image",
-          "type": "image",
-          "format": "ABKG",
-          "orientations": 0,
-          "owidth": 100,
-          "oheight": 310
-        },
-        {
-          "label": "Custom Slider",
-          "type": "slider",
-          "format": "ANPS",
-          "orientations": 0,
-          "owidth": 100,
-          "oheight": 310,
-          "animFramesLimit": 400
-        }
-      ]
-    }
   },
   {
     "name": "Twos Hotot",
@@ -395,60 +317,6 @@
         "title": "HT_POWR"
       }
     ]
-  },
-  {
-    "name": "MMDKM60C Gaming Keyboard",
-    "vendorId": "0x4D44",
-    "productId": "0x60CB",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
-    "name": "Luna Alice",
-    "vendorId": "0x5054",
-    "productId": "0x4C41",
-    "matrixLighting": {
-      "rows": 7,
-      "cols": 12,
-      "cdc": true
-    },
-    "cdc": true,
-    "screen": {
-      "menus": [
-        "video",
-        "image",
-        "slider"
-      ],
-      "swapBit": true,
-      "fileTypes": [
-        {
-          "label": "Custom Animation",
-          "type": "video",
-          "format": "ANIM",
-          "orientations": 0,
-          "owidth": 128,
-          "oheight": 128,
-          "animFramesLimit": 400
-        },
-        {
-          "label": "Custom Image",
-          "type": "image",
-          "format": "ABKG",
-          "orientations": 0,
-          "owidth": 128,
-          "oheight": 128
-        },
-        {
-          "label": "Custom Slider",
-          "type": "slider",
-          "format": "ANPS",
-          "orientations": 0,
-          "owidth": 128,
-          "oheight": 128,
-          "animFramesLimit": 400
-        }
-      ]
-    }
   },
   {
     "vendorId": "0x4A4F",
@@ -545,46 +413,16 @@
     }
   },
   {
-    "name": "MG67 HE",
-    "vendorId": "0x4D47",
-    "productId": "0xA67E",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
-    "name": "MG68 HE",
-    "vendorId": "0x4D47",
-    "productId": "0xA68E",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
-    "name": "MG80 HE",
-    "vendorId": "0x4D47",
-    "productId": "0xA84E",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
     "name": "Neo65 Hall",
     "vendorId": "0xE560",
     "productId": "0xEB65",
-    "actuation": true,
-    "firmware": "0.0.0"
+    "actuation": true
   },
   {
     "name": "Neo65 Hall",
     "vendorId": "0xE560",
     "productId": "0xEA65",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
-    "name": "Neo60 Hall",
-    "vendorId": "0xE560",
-    "productId": "0xEE60",
-    "actuation": true,
-    "firmware": "0.0.0"
+    "actuation": true
   },
   {
     "name": "Neo65 Cu",
@@ -622,19 +460,11 @@
     ]
   },
   {
-    "name": "Neo65 Hall",
-    "vendorId": "0xE560",
-    "productId": "0xEE65",
-    "actuation": true,
-    "firmware": "0.0.0"
-  },
-  {
     "name": "OW ALICE",
     "vendorId": "0x4F57",
     "productId": "0x4110",
     "firmware": "0.0.0",
-    "cdc": true,
-    "cdcMacIssue": true
+    "cdc": true
   },
   {
     "name": "OW suit hal",
@@ -1141,14 +971,7 @@
     "name": "Transition 106",
     "vendorId": "0x534B",
     "productId": "0xA106",
-    "firmware": {
-      "version": "1.0.0",
-      "file": [],
-      "masterBoot": [
-        "0x534b",
-        "0xc106"
-      ]
-    },
+    "firmware": "0.0.0",
     "cdc": true,
     "screen": {
       "menus": [
@@ -1190,8 +1013,7 @@
     "name": "Transition lite HE",
     "vendorId": "0x534B",
     "productId": "0x580E",
-    "actuation": true,
-    "firmware": "0.0.0"
+    "actuation": true
   },
   {
     "name": "Transition mp",
