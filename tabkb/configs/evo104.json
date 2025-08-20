@@ -1,0 +1,16 @@
+{
+  "name": "EVO 104",
+	"vendorId": "0xE560",
+	"productId": "0xE104",
+    "firmware": "0.0.0",
+    "cdc": true,
+    "matrixLighting": {
+      "rows": 8,
+      "cols": 24,
+      "cdc": true,
+      "texts": {
+        "count": 5,
+        "length": 30
+      }
+    }
+}

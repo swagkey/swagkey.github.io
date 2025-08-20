@@ -1,40 +1,45 @@
 {
-	"name": "Transition 106",
-	"vendorId": "0x534B",
-	"productId": "0xA106",
+  "name": "EVO_WORX98",
+  "vendorId": "0xE560",
+  "productId": "0xE98B",
   "firmware": {
     "version": "1.0.0",
     "file": [],
-    "masterBoot": ["0x534b", "0xc106"]
+    "masterBoot": ["0xe560", "0xe98d"]
   },
   "cdc": true,
+  "matrixLighting": {
+    "rows": 5,
+    "cols": 5,
+    "cdc": true
+  },
   "screen": {
     "menus": ["video", "image", "slider"],
     "fileTypes": [
       {
         "label": "Custom Animation",
         "type": "video",
-        "format": "ANIT",
+        "format": "ANIM",
         "orientations": 0,
-        "owidth": 320,
-        "oheight": 172,
+        "owidth": 100,
+        "oheight": 310,
         "animFramesLimit": 400
       },
       {
         "label": "Custom Image",
         "type": "image",
-        "format": "ABKT",
+        "format": "ABKG",
         "orientations": 0,
-        "owidth": 320,
-        "oheight": 172
+        "owidth": 100,
+        "oheight": 310
       },
       {
         "label": "Custom Slider",
         "type": "slider",
-        "format": "ANPT",
+        "format": "ANPS",
         "orientations": 0,
-        "owidth": 320,
-        "oheight": 172,
+        "owidth": 100,
+        "oheight": 310,
         "animFramesLimit": 400
       }
     ]

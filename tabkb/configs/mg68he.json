@@ -1,0 +1,7 @@
+{
+  "name": "MG68 HE",
+  "vendorId": "0x4D47",
+  "productId": "0xA68E",
+  "actuation": true,
+  "firmware": "0.0.0"
+}
