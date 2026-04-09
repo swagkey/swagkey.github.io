@@ -1,6 +1,7 @@
 {
-	"name": "Chow75 HE",
-	"vendorId": "0xC480",
-	"productId": "0xC75E",
-    "actuation": true
+  "name": "Chow75 HE",
+  "vendorId": "0xC480",
+  "productId": "0xC75E",
+  "actuation": true,
+  "firmware": "0.0.0"
 }

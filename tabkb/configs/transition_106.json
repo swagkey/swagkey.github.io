@@ -2,7 +2,11 @@
 	"name": "Transition 106",
 	"vendorId": "0x534B",
 	"productId": "0xA106",
-  "firmware": "0.0.0",
+  "firmware": {
+    "version": "1.0.0",
+    "file": [],
+    "masterBoot": ["0x534b", "0xc106"]
+  },
   "cdc": true,
   "screen": {
     "menus": ["video", "image", "slider"],
