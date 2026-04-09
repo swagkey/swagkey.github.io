@@ -1,0 +1,8 @@
+{
+	"name": "Eave65 mp8k",
+	"vendorId": "0x534B",
+	"productId": "0xA065",
+  "firmware": {
+  },
+  "cdc": true
+}
