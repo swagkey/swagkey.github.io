@@ -86,6 +86,80 @@
                         "content": ["id_qmk_rgb_matrix_color", 22, 4]
                       }
                     ]
+                },
+                {
+                    "label": "Underglow",
+                    "content": [
+                        {
+                        "label": "Brightness",
+                        "type": "range",
+                        "options": [0, 255],
+                        "content": ["id_qmk_rgblight_brightness", 21, 1]
+                        },
+                        {
+                        "label": "Effect",
+                        "type": "dropdown",
+                        "content": ["id_qmk_rgblight_effect", 21, 2],
+                        "options": [
+                            "All Off",
+                            "Solid Color",
+                            "Breathing 1",
+                            "Breathing 2",
+                            "Breathing 3",
+                            "Breathing 4",
+                            "Rainbow Mood 1",
+                            "Rainbow Mood 2",
+                            "Rainbow Mood 3",
+                            "Rainbow Swirl 1",
+                            "Rainbow Swirl 2",
+                            "Rainbow Swirl 3",
+                            "Rainbow Swirl 4",
+                            "Rainbow Swirl 5",
+                            "Rainbow Swirl 6",
+                            "Snake 1",
+                            "Snake 2",
+                            "Snake 3",
+                            "Snake 4",
+                            "Snake 5",
+                            "Snake 6",
+                            "Knight 1",
+                            "Knight 2",
+                            "Knight 3",
+                            "Christmas",
+                            "Gradient 1",
+                            "Gradient 2",
+                            "Gradient 3",
+                            "Gradient 4",
+                            "Gradient 5",
+                            "Gradient 6",
+                            "Gradient 7",
+                            "Gradient 8",
+                            "Gradient 9",
+                            "Gradient 10",
+                            "RGB Test",
+                            "Alternating",
+                            "Twinkle 1",
+                            "Twinkle 2",
+                            "Twinkle 3",
+                            "Twinkle 4",
+                            "Twinkle 5",
+                            "Twinkle 6"
+                        ]
+                        },
+                        {
+                        "showIf": "{id_qmk_rgblight_effect} != 0",
+                        "label": "Effect Speed",
+                        "type": "range",
+                        "options": [0, 255],
+                        "content": ["id_qmk_rgblight_effect_speed", 21, 3]
+                        },
+                        {
+                        "showIf": "{id_qmk_rgblight_effect} != 0 && {id_qmk_rgblight_effect} != 35",
+                        "label": "Color",
+                        "type": "color",
+                        "content": ["id_qmk_rgblight_color", 21, 4]
+                        }
+                    ]
                 }
             ]
         },
@@ -98,22 +172,22 @@
                         {
                             "label": "Toggle N-key rollover",
                             "type": "toggle",
-                            "content": ["id_cp_magic_nkro", 19, 1]
+                            "content": ["id_magic_nkro", 19, 1]
                         },
                         {
                             "label": "Toggles the status of the GUI keys",
                             "type": "toggle",
-                            "content": ["id_cp_magic_gui", 19, 2]
+                            "content": ["id_magic_no_gui", 19, 2]
                         },
                         {
                             "label": "Toggle Alt and GUI swap on both sides",
                             "type": "toggle",
-                            "content": ["id_cp_magic_alt_gui", 19, 3]
+                            "content": ["id_magic_swap_alt_gui", 19, 3]
                         },
                         {
                             "label": "Treat Caps Lock as Control",
                             "type": "toggle",
-                            "content": ["id_cp_magic_caps_ctrl", 19, 4]
+                            "content": ["id_magic_caps_to_ctrl", 19, 4]
                         }
                     ]
                 },
@@ -137,7 +211,7 @@
                                 ["3 hours", 5],
                                 ["6 hours", 6]
                               ],
-                            "content": ["id_cp_sleep_mode", 17, 2]
+                            "content": ["id_fe_standby_mode", 17, 2]
                         },
                         {
                             "label": "Debounce Mode",
@@ -164,6 +238,20 @@
                                 ["Level 5", 25]
                             ],
                             "content": ["id_cp_debounce", 17, 7]
+                        },
+                        {
+                            "label": "Matrix scan frequency",
+                            "type": "dropdown",
+                            "options": [
+                                ["8k", 0],
+                                ["6k", 1],
+                                ["5k", 2],
+                                ["4k", 3],
+                                ["3k", 5],
+                                ["2k", 10],
+                                ["1k", 22]
+                              ],
+                            "content": ["id_cp_matrix_frequency", 17, 8]
                         }
                     ]
                 },
@@ -230,23 +318,27 @@
                         }
                     ]
                 },
+	            {
+                    "label": "Date Time",
+                    "content": []
+                },
                 {
                     "label": "Firmware",
                     "content": [
                         {
                             "label": "Clear Settings",
                             "type": "toggle",
-                            "content": ["id_cp_eeprom_reset", 16, 2]
+                            "content": ["id_firmware_config_reset", 16, 2]
                         },
                         {
                             "label": "Reboot Keyboard",
                             "type": "toggle",
-                            "content": ["id_cp_kbd_reboot", 16, 3]
+                            "content": ["id_firmware_reboot", 16, 3]
                         },
                         {
                             "label": "Keyboard DFU",
                             "type": "toggle",
-                            "content": ["id_cp_kbd_dfu", 16, 1]
+                            "content": ["id_firmware_dfu", 16, 1]
                         }
                     ]
                 }

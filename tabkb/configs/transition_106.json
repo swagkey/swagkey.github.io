@@ -1,7 +1,7 @@
 {
-	"name": "Transition 106",
-	"vendorId": "0x534B",
-	"productId": "0xA106",
+  "name": "Transition 106",
+  "vendorId": "0x534B",
+  "productId": "0xA106",
   "firmware": {
     "version": "1.0.0",
     "file": [],
