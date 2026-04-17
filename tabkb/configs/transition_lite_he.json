@@ -1,7 +1,6 @@
 {
-  "name": "Transition lite HE",
-  "vendorId": "0x534B",
-  "productId": "0x580E",
-  "actuation": true,
-  "firmware": "0.0.0"
+	"name": "Transition lite HE",
+	"vendorId": "0x534B",
+	"productId": "0x580E",
+    "actuation": true
 }
