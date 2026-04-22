@@ -1,0 +1,400 @@
+{
+	"name": "MMDKM60C Gaming Keyboard",
+	"vendorId": "0x4D44",
+	"productId": "0x60CB",
+	"matrix": {
+		"rows": 8,
+		"cols": 8
+	},
+    "keycodes": ["qmk_lighting"],
+    "menus": [
+        {
+            "label": "Lighting",
+            "content": [
+                {
+                    "label": "Backlight",
+                    "content": [
+                      {
+                        "label": "Brightness",
+                        "type": "range",
+                        "options": [0, 255],
+                        "content": ["id_qmk_rgb_matrix_brightness", 3, 1]
+                      },
+                      {
+                        "label": "Effect",
+                        "type": "dropdown",
+                        "content": ["id_qmk_rgb_matrix_effect", 3, 2],
+                        "options": [
+                          "All Off",
+                          "Solid Color",
+                          "Alphas Mods",
+                          "Gradient Up/Down",
+                          "Gradient Left/Right",
+                          "Breathing",
+                          "Band Sat.",
+                          "Band Val.",
+                          "Pinwheel Sat.",
+                          "Pinwheel Val.",
+                          "Spiral Sat.",
+                          "Spiral Val.",
+                          "Cycle All",
+                          "Cycle Left/Right",
+                          "Cycle Up/Down",
+                          "Rainbow Moving Chevron",
+                          "Cycle Out/In",
+                          "Cycle Out/In Dual",
+                          "Cycle Pinwheel",
+                          "Cycle Spiral",
+                          "Dual Beacon",
+                          "Rainbow Beacon",
+                          "Rainbow Pinwheels",
+                          "Raindrops",
+                          "Jellybean Raindrops",
+                          "Hue Breathing",
+                          "Hue Pendulum",
+                          "Hue Wave",
+                          "Pixel Rain",
+                          "Pixel Flow",
+                          "Pixel Fractal",
+                          "Typing Heatmap",
+                          "Digital Rain",
+                          "Solid Reactive Simple",
+                          "Solid Reactive",
+                          "Solid Reactive Wide",
+                          "Solid Reactive Multi Wide",
+                          "Solid Reactive Cross",
+                          "Solid Reactive Multi Cross",
+                          "Solid Reactive Nexus",
+                          "Solid Reactive Multi Nexus",
+                          "Spash",
+                          "Multi Splash",
+                          "Solid Splash",
+                          "Solid Multi Splash"
+                        ]
+                      },
+                      {
+                        "showIf": "{id_qmk_rgb_matrix_effect} != 0",
+                        "label": "Effect Speed",
+                        "type": "range",
+                        "options": [0, 255],
+                        "content": ["id_qmk_rgb_matrix_effect_speed", 3, 3]
+                      },
+                      {
+                        "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
+                        "label": "Color",
+                        "type": "color",
+                        "content": ["id_qmk_rgb_matrix_color", 3, 4]
+                      }
+                    ]
+                },
+                {
+                    "label": "Underglow",
+                    "content": [
+                        {
+                        "label": "Brightness",
+                        "type": "range",
+                        "options": [0, 255],
+                        "content": ["id_qmk_rgblight_brightness", 2, 1]
+                        },
+                        {
+                        "label": "Effect",
+                        "type": "dropdown",
+                        "content": ["id_qmk_rgblight_effect", 2, 2],
+                        "options": [
+                            "All Off",
+                            "Solid Color",
+                            "Breathing 1",
+                            "Breathing 2",
+                            "Breathing 3",
+                            "Breathing 4",
+                            "Rainbow Mood 1",
+                            "Rainbow Mood 2",
+                            "Rainbow Mood 3",
+                            "Rainbow Swirl 1",
+                            "Rainbow Swirl 2",
+                            "Rainbow Swirl 3",
+                            "Rainbow Swirl 4",
+                            "Rainbow Swirl 5",
+                            "Rainbow Swirl 6",
+                            "Snake 1",
+                            "Snake 2",
+                            "Snake 3",
+                            "Snake 4",
+                            "Snake 5",
+                            "Snake 6",
+                            "Knight 1",
+                            "Knight 2",
+                            "Knight 3",
+                            "Christmas",
+                            "Gradient 1",
+                            "Gradient 2",
+                            "Gradient 3",
+                            "Gradient 4",
+                            "Gradient 5",
+                            "Gradient 6",
+                            "Gradient 7",
+                            "Gradient 8",
+                            "Gradient 9",
+                            "Gradient 10",
+                            "RGB Test",
+                            "Alternating",
+                            "Twinkle 1",
+                            "Twinkle 2",
+                            "Twinkle 3",
+                            "Twinkle 4",
+                            "Twinkle 5",
+                            "Twinkle 6"
+                        ]
+                        },
+                        {
+                        "showIf": "{id_qmk_rgblight_effect} != 0 && {id_qmk_rgblight_effect} != 35",
+                        "label": "Color",
+                        "type": "color",
+                        "content": ["id_qmk_rgblight_color", 2, 4]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Config",
+            "content": [
+                {
+                    "label": "Magic",
+                    "content": [
+                        {
+                            "label": "Toggle N-key rollover",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_nkro", 19, 1]
+                        },
+                        {
+                            "label": "Toggles the status of the GUI keys",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_gui", 19, 2]
+                        },
+                        {
+                            "label": "Toggle Alt and GUI swap on both sides",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_alt_gui", 19, 3]
+                        },
+                        {
+                            "label": "Treat Caps Lock as Control",
+                            "type": "toggle",
+                            "content": ["id_cp_magic_caps_ctrl", 19, 4]
+                        }
+                    ]
+                },
+                {
+                    "label": "Features",
+                    "content": [
+                        {
+                            "label": "Enable F Zone",
+                            "type": "toggle",
+                            "content": ["id_cp_switch_number_f12", 24, 1]
+                        },
+                        {
+                            "label": "Mouse key interval",
+                            "type": "range",
+                            "options": [2, 40],
+                            "content": ["id_fe_mousekey_interval", 17, 9]
+                        }
+                    ]
+                },
+                {
+                    "label": "Firmware",
+                    "content": [
+                        {
+                            "label": "Clear Settings",
+                            "type": "toggle",
+                            "content": ["id_cp_eeprom_reset", 16, 2]
+                        },
+                        {
+                            "label": "Reboot Keyboard",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_reboot", 16, 3]
+                        },
+                        {
+                            "label": "Keyboard DFU",
+                            "type": "toggle",
+                            "content": ["id_cp_kbd_dfu", 16, 1]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "customKeycodes": [
+        {"name": "F-Zone",
+         "title": "[TFA_TOG] Toggle Number or F zone",
+         "shortName": "FZon"
+        },
+        {"name": "MRGB_MOD",
+         "title": "[MRGB_MOD] RGB Matrix cycle through animations",
+         "shortName": "MRGB_MOD"
+        },
+        {"name": "MRGB_HUI",
+         "title": "[MRGB_HUI] RGB Matrix cycle through hue",
+         "shortName": "MRGB_HUI"
+        },
+        {"name": "MRGB_VAI",
+         "title": "[MRGB_VAI] RGB Matrix increase the brightness level",
+         "shortName": "MRGB_VAI"
+        },
+        {"name": "MRGB_VAD",
+         "title": "[MRGB_VAD] RGB Matrix decrease the brightness level",
+         "shortName": "MRGB_VAD"
+        },
+        {"name": "MRGB_SPI",
+         "title": "[MRGB_SPI] RGB Matrix increase the animation speed",
+         "shortName": "MRGB_SPI"
+        },
+        {"name": "MRGB_SPD",
+         "title": "[MRGB_SPD] RGB Matrix decrease the animation speed",
+         "shortName": "MRGB_SPD"
+        },
+        {"name": "ORGB_MOD",
+         "title": "[ORGB_MOD] RGB Lighting cycle through animations",
+         "shortName": "ORGB_MOD"
+        },
+        {"name": "ORGB_HUI",
+         "title": "[ORGB_HUI] RGB Lighting cycle through hue",
+         "shortName": "ORGB_HUI"
+        },
+        {"name": "ORGB_VAI",
+         "title": "[ORGB_VAI] RGB Lighting increase the brightness level",
+         "shortName": "ORGB_VAI"
+        },
+        {"name": "ORGB_VAD",
+         "title": "[ORGB_VAD] RGB Lighting decrease the brightness level",
+         "shortName": "ORGB_VAD"
+        },
+        {"name": "ORGB_SAI",
+         "title": "[ORGB_SAI] RGB Lighting increase the saturation",
+         "shortName": "ORGB_SAI"
+        },
+        {"name": "ORGB_SAD",
+         "title": "[ORGB_SAD] RGB Lighting decrease the saturation",
+         "shortName": "ORGB_SAD"
+        }
+    ],
+	"layouts": {
+        "keymap": [
+            [
+                "0,0",
+                "1,0",
+                "2,0",
+                "3,0",
+                "4,0",
+                "5,0",
+                "6,0",
+                "7,0",
+                "3,5",
+                "2,5",
+                "1,5",
+                "0,5",
+                "4,5",
+                {
+                "w": 2
+                },
+                "5,5"
+            ],
+            [
+                {
+                "w": 1.5
+                },
+                "0,1",
+                "1,1",
+                "2,1",
+                "3,1",
+                "4,1",
+                "5,1",
+                "6,1",
+                "7,1",
+                "6,6",
+                "7,6",
+                "4,6",
+                "5,6",
+                "6,5",
+                {
+                "w": 1.5
+                },
+                "7,5"
+            ],
+            [
+                {
+                "w": 1.75
+                },
+                "0,2",
+                "1,2",
+                "2,2",
+                "3,2",
+                "4,2",
+                "5,2",
+                "6,2",
+                "7,2",
+                "3,6",
+                "2,6",
+                "1,6",
+                "0,6",
+                {
+                "w": 2.25
+                },
+                "6,7"
+            ],
+            [
+                {
+                "w": 2.25
+                },
+                "0,3",
+                "1,3",
+                "2,3",
+                "3,3",
+                "4,3",
+                "5,3",
+                "6,3",
+                "7,3",
+                "1,7",
+                "2,7",
+                "3,7",
+                {
+                "w": 2.75
+                },
+                "7,7"
+            ],
+            [
+                {
+                "w": 1.25
+                },
+                "0,4",
+                {
+                "w": 1.25
+                },
+                "1,4",
+                {
+                "w": 1.25
+                },
+                "2,4",
+                {
+                "w": 6.25
+                },
+                "3,4",
+                {
+                "w": 1.25
+                },
+                "5,4",
+                {
+                "w": 1.25
+                },
+                "4,4",
+                {
+                "w": 1.25
+                },
+                "6,4",
+                {
+                "w": 1.25
+                },
+                "7,4"
+            ]
+        ]
+	}
+}

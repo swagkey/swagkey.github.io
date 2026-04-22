@@ -1,0 +1,65 @@
+{
+  "name": "QK65 MK3",
+  "vendorId": "0x514B",
+  "productId": "0x4D03",
+  "firmware": {
+    "version": "1.0.0",
+    "file": [],
+    "masterBoot": ["0x514b", "0x4d06"]
+  },
+  "cdc": true,
+  "matrixLighting": {
+    "rows": 5,
+    "cols": 5,
+    "cdc": true
+  },
+  "screen": {
+    "menus": ["video", "image", "slider", "theme", "theme-color"],
+    "maxOutputSize": 67108864,
+    "maxFgFileCount": 6,
+    "fileTypes": [
+      {
+        "label": "Theme",
+        "type": "video",
+        "format": "ANIT",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320,
+        "animFramesLimit": 400
+      },
+      {
+        "label": "Theme",
+        "type": "image",
+        "format": "ABKT",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320
+      },
+      {
+        "label": "Theme",
+        "type": "slider",
+        "format": "ANPT",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320,
+        "animFramesLimit": 400
+      },
+      {
+        "label": "Background",
+        "type": "theme",
+        "format": "IAMT",
+        "orientations": 0,
+        "owidth": 172,
+        "oheight": 320,
+        "animFramesLimit": -1
+      },
+      {
+        "label": "Foreground",
+        "type": "theme",
+        "format": "IAFT",
+        "orientations": 0,
+        "animFramesLimit": -1
+      }
+    ]
+  }
+}

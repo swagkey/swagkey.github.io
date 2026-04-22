@@ -1,7 +1,7 @@
 {
-	"name": "Transition 106",
-	"vendorId": "0x534B",
-	"productId": "0xA106",
+	"name": "EVO_WORX98",
+	"vendorId": "0xE560",
+	"productId": "0xE98B",
 	"matrix": {
 		"rows": 7,
 		"cols": 16
@@ -88,76 +88,29 @@
                     ]
                 },
                 {
-                    "label": "Underglow",
+                    "label": "MATRIX LED",
                     "content": [
                         {
                         "label": "Brightness",
                         "type": "range",
                         "options": [0, 255],
-                        "content": ["id_qmk_rgblight_brightness", 21, 1]
+                        "content": ["id_qmk_led_matrix_brightness", 26, 1]
                         },
                         {
                         "label": "Effect",
                         "type": "dropdown",
-                        "content": ["id_qmk_rgblight_effect", 21, 2],
+                        "content": ["id_qmk_led_matrix_effect", 26, 2],
                         "options": [
                             "All Off",
-                            "Solid Color",
-                            "Breathing 1",
-                            "Breathing 2",
-                            "Breathing 3",
-                            "Breathing 4",
-                            "Rainbow Mood 1",
-                            "Rainbow Mood 2",
-                            "Rainbow Mood 3",
-                            "Rainbow Swirl 1",
-                            "Rainbow Swirl 2",
-                            "Rainbow Swirl 3",
-                            "Rainbow Swirl 4",
-                            "Rainbow Swirl 5",
-                            "Rainbow Swirl 6",
-                            "Snake 1",
-                            "Snake 2",
-                            "Snake 3",
-                            "Snake 4",
-                            "Snake 5",
-                            "Snake 6",
-                            "Knight 1",
-                            "Knight 2",
-                            "Knight 3",
-                            "Christmas",
-                            "Gradient 1",
-                            "Gradient 2",
-                            "Gradient 3",
-                            "Gradient 4",
-                            "Gradient 5",
-                            "Gradient 6",
-                            "Gradient 7",
-                            "Gradient 8",
-                            "Gradient 9",
-                            "Gradient 10",
-                            "RGB Test",
-                            "Alternating",
-                            "Twinkle 1",
-                            "Twinkle 2",
-                            "Twinkle 3",
-                            "Twinkle 4",
-                            "Twinkle 5",
-                            "Twinkle 6"
+                            "Typewriter",
+                            "Terminal",
+                            "Custom"
                         ]
                         },
                         {
-                        "showIf": "{id_qmk_rgblight_effect} != 0",
-                        "label": "Effect Speed",
-                        "type": "range",
-                        "options": [0, 255],
-                        "content": ["id_qmk_rgblight_effect_speed", 21, 3]
-                        },
-                        {
-                        "showIf": "{id_qmk_rgblight_effect} != 0 && {id_qmk_rgblight_effect} != 35",
                         "label": "Color",
                         "type": "color",
-                        "content": ["id_qmk_rgblight_color", 21, 4]
+                        "content": ["id_qmk_led_matrix_color", 26, 4]
                         }
                     ]
                 }
@@ -172,22 +125,22 @@
                         {
                             "label": "Toggle N-key rollover",
                             "type": "toggle",
-                            "content": ["id_magic_nkro", 19, 1]
+                            "content": ["id_cp_magic_nkro", 19, 1]
                         },
                         {
                             "label": "Toggles the status of the GUI keys",
                             "type": "toggle",
-                            "content": ["id_magic_no_gui", 19, 2]
+                            "content": ["id_cp_magic_gui", 19, 2]
                         },
                         {
                             "label": "Toggle Alt and GUI swap on both sides",
                             "type": "toggle",
-                            "content": ["id_magic_swap_alt_gui", 19, 3]
+                            "content": ["id_cp_magic_alt_gui", 19, 3]
                         },
                         {
                             "label": "Treat Caps Lock as Control",
                             "type": "toggle",
-                            "content": ["id_magic_caps_to_ctrl", 19, 4]
+                            "content": ["id_cp_magic_caps_ctrl", 19, 4]
                         }
                     ]
                 },
@@ -211,7 +164,7 @@
                                 ["3 hours", 5],
                                 ["6 hours", 6]
                               ],
-                            "content": ["id_fe_standby_mode", 17, 2]
+                            "content": ["id_cp_sleep_mode", 17, 2]
                         },
                         {
                             "label": "Debounce Mode",
@@ -227,33 +180,24 @@
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },
                         {
-                            "label": "Debounce delay level",
+                            "label": "Debounce Delay (ms)",
                             "type": "dropdown",
                             "options": [
-                                ["Level 0", 1],
-                                ["Level 1", 10],
-                                ["Level 2", 13],
-                                ["Level 3", 17],
-                                ["Level 4", 20],
-                                ["Level 5", 25]
-                            ],
-                            "content": ["id_cp_debounce", 17, 7]
-                        },
-                        {
-                            "label": "Matrix scan frequency",
-                            "type": "dropdown",
-                            "options": [
-                                ["8k", 0],
-                                ["6k", 1],
-                                ["5k", 2],
-                                ["4k", 3],
-                                ["3k", 5],
-                                ["2k", 10],
-                                ["1k", 22]
+                                ["1 ms", 1],
+                                ["2 ms", 2],
+                                ["3 ms", 3],
+                                ["4 ms", 4],
+                                ["5 ms", 5],
+                                ["6 ms", 6],
+                                ["7 ms", 7]
                               ],
-                            "content": ["id_cp_matrix_frequency", 17, 8]
+                            "content": ["id_cp_debounce", 17, 7]
                         }
                     ]
+                },
+                {
+                    "label": "Date Time",
+                    "content": []
                 },
                 {
                     "label": "SOCD",
@@ -318,9 +262,40 @@
                         }
                     ]
                 },
-	            {
-                    "label": "Date Time",
-                    "content": []
+                {
+                    "label": "Connect",
+                    "content":[
+                        {
+                            "label": "Connect Mode",
+                            "type": "dropdown",
+                            "options": [
+                                ["USB", 0],
+                                ["Wireless 2.4G", 1],
+                                ["Bluetooth G1", 2],
+                                ["Bluetooth G2", 3],
+                                ["Bluetooth G3", 4]
+                              ],
+                            "content": ["id_cp_connect_mode", 18, 1]
+                        },
+                        {
+                            "label": "Delete current bound",
+                            "type": "toggle",
+                            "showIf": "{id_cp_connect_mode} > 0",
+                            "content": ["id_cp_connect_bond_rest", 18, 3]
+                        },
+                        {
+                            "label": "Delete all bounds",
+                            "type": "toggle",
+                            "showIf": "{id_cp_connect_mode} > 1",
+                            "content": ["id_cp_connect_bonds_clear", 18, 4]
+                        },
+                        {
+                            "label": "2.4G Receiver DFU",
+                            "type": "toggle",
+                            "showIf": "{id_cp_connect_mode} == 1",
+                            "content": ["id_cp_connect_dfu", 18, 5]
+                        }
+                    ]
                 },
                 {
                     "label": "Firmware",
@@ -328,17 +303,17 @@
                         {
                             "label": "Clear Settings",
                             "type": "toggle",
-                            "content": ["id_firmware_config_reset", 16, 2]
+                            "content": ["id_cp_eeprom_reset", 16, 2]
                         },
                         {
                             "label": "Reboot Keyboard",
                             "type": "toggle",
-                            "content": ["id_firmware_reboot", 16, 3]
+                            "content": ["id_cp_kbd_reboot", 16, 3]
                         },
                         {
                             "label": "Keyboard DFU",
                             "type": "toggle",
-                            "content": ["id_firmware_dfu", 16, 1]
+                            "content": ["id_cp_kbd_dfu", 16, 1]
                         }
                     ]
                 }
@@ -401,74 +376,6 @@
         {"name": "Info",
          "title": "[INF_OUT] Print the current KBD information",
          "shortName": "Info"
-        },
-        {"name": "Screen Toggle",
-         "title": "[TGI_TOG] Screen Toggle",
-         "shortName": "TGI_TOG"
-        },
-        {"name": "Screen Mode",
-         "title": "[TGI_MOD] Screen Mode Switch",
-         "shortName": "TGI_MOD"
-        },
-        {"name": "Screen Enter key",
-         "title": "[TGI_ENT] Screen Enter key",
-         "shortName": "TGI_ENT"
-        },
-        {"name": "Screen Exit key",
-         "title": "[TGI_EXT] Screen Exit key",
-         "shortName": "TGI_EXT"
-        },
-        {"name": "Screen Up key",
-         "title": "[TGI_UP] Screen Up key",
-         "shortName": "TGI_UP"
-        },
-        {"name": "Screen Down key",
-         "title": "[TGI_DN] Screen Down key",
-         "shortName": "TGI_DN"
-        },
-        {"name": "Screen Left key",
-         "title": "[TGI_LT] Screen Left key",
-         "shortName": "TGI_LT"
-        },
-        {"name": "Screen Right key",
-         "title": "[TGI_RT] Screen Right key",
-         "shortName": "TGI_RT"
-        },
-        {"name": "TRGB Toggle",
-         "title": "[TRGB_TOG] Rgblight Toggle",
-         "shortName": "TRGB_TOG"
-        },
-        {"name": "TRGB mode",
-         "title": "[TRGB_MOD] Rgblight mode",
-         "shortName": "TRGB_MOD"
-        },
-        {"name": "TRGB rmode",
-         "title": "[TRGB_RMOD] Rgblight rmode",
-         "shortName": "TRGB_RMOD"
-        },
-        {"name": "TRGB vai",
-         "title": "[TRGB_VAI] Rgblight val increase",
-         "shortName": "TRGB_VAI"
-        },
-        {"name": "TRGB vad",
-         "title": "[TRGB_VAD] Rgblight val decrease",
-         "shortName": "TRGB_VAD"
-        },
-        {"name": "TRGB hui",
-         "title": "[TRGB_HUI] Rgblight hue increase",
-         "shortName": "TRGB_HUI"
-        },
-        {"name": "TRGB hud",
-         "title": "[TRGB_HUD] Rgblight hue decrease",
-         "shortName": "TRGB_HUD"
-        },
-        {"name": "TRGB sai",
-         "title": "[TRGB_SAI] Rgblight sat increase",
-         "shortName": "TRGB_SAI"
-        },
-        {"name": "TRGB sad",
-         "title": "[TRGB_SAD] Rgblight sat decrease",
-         "shortName": "TRGB_SAD"
         }
     ],
 	"layouts": {
@@ -476,21 +383,21 @@
             [
                 "0,0",
                 {
-                  "x": 1
+                  "x": 1.25
                 },
                 "0,1",
                 "0,2",
                 "0,3",
                 "0,4",
                 {
-                  "x": 0.5
+                  "x": 0.25
                 },
                 "0,5",
                 "0,6",
                 "0,7",
                 "0,8",
                 {
-                  "x": 0.5
+                  "x": 0.25
                 },
                 "0,9",
                 "0,10",
@@ -499,14 +406,18 @@
                 {
                   "x": 0.25
                 },
-                "0,13",
                 "0,14",
-                "0,15",
                 {
-                  "x": 2.25
+                    "x": 0.125
                 },
+                "0,13",
+                {
+                    "x": 0.125
+                },
+                "0,15",
+                "6,15",
                 "6,14",
-                "6,15"
+                "5,15"
               ],
               [
                 {
@@ -529,19 +440,19 @@
                   "w": 2
                 },
                 "1,13",
-                {
-                  "x": 0.25
-                },
                 "1,14",
-                "1,15",
-                "2,14",
                 {
-                  "x": 0.25
+                    "x": 0.125,
+                    "h": 0.75
                 },
                 "6,0",
-                "6,1",
-                "6,2",
-                "6,3"
+                {
+                    "x": 0.125
+                },
+                "1,15",
+                "6,10",
+                "6,11",
+                "5,12"
               ],
               [
                 {
@@ -564,22 +475,22 @@
                   "w": 1.5
                 },
                 "2,13",
+                "2,14",
                 {
-                  "x": 0.25
+                    "x": 0.125,
+                    "h": 0.75
                 },
-                "4,14",
-                "4,15",
+                "6,1",
+                {
+                    "x": 0.125
+                },
                 "2,15",
-                {
-                    "x": 0.25
-                },
-                "6,4",
-                "6,5",
-                "6,6",
+                "6,8",
+                "6,9",
                 {
                     "h": 2
                 },
-                "6,13"
+                "5,11"
               ],
               [
                 {
@@ -601,19 +512,24 @@
                   "w": 2.25
                 },
                 "3,12",
+                "3,14",
                 {
-                    "x": 3.5
+                    "x": 0.125,
+                    "h": 0.75
                 },
-                "6,7",
-                "6,8",
-                "6,9"
+                "6,12",
+                {
+                    "x": 0.125
+                },
+                "3,15",
+                "6,6",
+                "6,7"
               ],
               [
                 {
                   "w": 2.25
                 },
                 "4,0",
-                "4,1",
                 "4,2",
                 "4,3",
                 "4,4",
@@ -623,70 +539,59 @@
                 "4,8",
                 "4,9",
                 "4,10",
+                "4,11",
                 {
                   "w": 2.75
                 },
-                "4,11",
+                "4,12",
+                "4,13",
                 {
-                    "x": 1.25
+                    "x": 0.125,
+                    "h": 0.75
                 },
-                "3,13",
+                "6,13",
                 {
-                    "x": 1.25
+                    "x": 0.125
                 },
-                "6,10",
-                "6,11",
-                "6,12",
+                "4,15",
+                "6,4",
+                "6,5",
                 {
                     "h": 2
                 },
-                "5,12"
+                "5,10"
               ],
               [
                 {
-                  "w": 1.25
+                  "w": 1.5
                 },
                 "5,0",
-                {
-                  "w": 1.25
-                },
                 "5,1",
                 {
-                  "w": 1.25
+                  "w": 1.5
                 },
                 "5,2",
                 {
-                  "w": 6.25
+                  "w": 7
+                },
+                "5,3",
+                {
+                  "w": 1.5
                 },
                 "5,4",
+                "5,5",
                 {
-                  "w": 1.25
+                  "x": 0.5
                 },
-                "5,8",
-                {
-                  "w": 1.25
-                },
-                "5,9",
-                {
-                  "w": 1.25
-                },
-                "5,10",
-                {
-                  "w": 1.25
-                },
-                "5,11",
-                {
-                    "x": 0.25
-                },
-                "4,12",
-                "4,13",
-                "5,15",
+                "5,6",
+                "5,7",
+                "5,14",
                 {
                   "x": 0.25,
                   "w": 2
                 },
-                "5,13",
-                "5,14"
+                "5,8",
+                "5,9"
             ]
 		]
 	}

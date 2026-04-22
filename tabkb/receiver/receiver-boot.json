@@ -1,7 +1,27 @@
 [
   {
+    "path": "54ab4254",
+    "vendorId": "0x54ab",
+    "productId": "0x4254"
+  },
+  {
+    "path": "98x_receiver_boot",
+    "vendorId": "0xe560",
+    "productId": "0xcc85"
+  },
+  {
     "path": "106_receiver_boot",
     "vendorId": "0x534b",
     "productId": "0xcc85"
+  },
+  {
+    "path": "qk65_reciever_boot",
+    "vendorId": "0x514b",
+    "productId": "0x4d08"
+  },
+  {
+    "path": "evo104_reciever_boot",
+    "vendorId": "0xE560",
+    "productId": "0xCC85"
   }
 ]

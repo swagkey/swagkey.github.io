@@ -1,0 +1,43 @@
+{
+  "name": "Luna Alice",
+  "vendorId": "0x5054",
+  "productId": "0x4C41",
+  "matrixLighting": {
+    "rows": 7,
+    "cols": 12,
+    "cdc": true
+  },
+  "cdc": true,
+  "screen": {
+    "menus": ["video", "image", "slider"],
+    "swapBit": true,
+    "fileTypes": [
+      {
+        "label": "Custom Animation",
+        "type": "video",
+        "format": "ANIM",
+        "orientations": 0,
+        "owidth": 128,
+        "oheight": 128,
+        "animFramesLimit": 400
+      },
+      {
+        "label": "Custom Image",
+        "type": "image",
+        "format": "ABKG",
+        "orientations": 0,
+        "owidth": 128,
+        "oheight": 128
+      },
+      {
+        "label": "Custom Slider",
+        "type": "slider",
+        "format": "ANPS",
+        "orientations": 0,
+        "owidth": 128,
+        "oheight": 128,
+        "animFramesLimit": 400
+      }
+    ]
+  }
+}
