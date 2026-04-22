@@ -3,6 +3,5 @@
 	"vendorId": "0x4F57",
 	"productId": "0x4110",
     "firmware": "0.0.0",
-    "cdc": true,
-    "cdcMacIssue": true
+    "cdc": true
 }

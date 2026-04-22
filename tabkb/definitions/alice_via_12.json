@@ -6,7 +6,6 @@
 		"rows": 5,
 		"cols": 16
 	},
-    "keycodes": ["qmk_lighting"],
     "menus": [
         {
             "label": "Lighting",
@@ -79,19 +78,13 @@
                     ]
                 },
                 {
-                    "label": "Pod Lighting",
+                    "label": "Indicator",
                     "content": [
                         {
-                        "label": "Underglow Brightness",
+                        "label": "Brightness",
                         "type": "range",
                         "options": [0, 255],
                         "content": ["id_qmk_custom_rgblight_brightness", 27, 1]
-                        },
-                        {
-                        "label": "Indicator Brightness",
-                        "type": "range",
-                        "options": [0, 20],
-                        "content": ["id_qmk_custom_rgblightsss_brightness", 27, 5]
                         },
                         {
                         "label": "Effect",
@@ -214,9 +207,10 @@
                             "content": ["id_cp_matrix_frequency", 17, 8]
                         },
                         {
-                            "label": "allow nap",
-                            "type": "toggle",
-                            "content": ["id_extend_plc_nap_toggle", 66, 101]
+                            "label": "Wireless channel",
+                            "type": "range",
+                            "options": [1, 99],
+                            "content": ["id_cp_wireless_channel", 17, 20]
                         }
                     ]
                 },
@@ -370,14 +364,66 @@
         {"name": "Split rgblight switch",
          "title": "[RGB_RMD] Split rgb switch",
          "shortName": "SplitRgbSwh"
-        }
+        },
+        {"name": "AI Key0",
+         "title": "AI shortcut Key0",
+         "shortName": "AIKey0"
+        },
+        {"name": "AI Key1",
+         "title": "AI shortcut Key1",
+         "shortName": "AIKey1"
+        },
+        {"name": "AI Key2",
+         "title": "AI shortcut Key2",
+         "shortName": "AIKey2"
+        },
+        {"name": "AI Key3",
+        "title": "AI shortcut Key3",
+        "shortName": "AIKey3"
+       },
+       {"name": "AI Key4",
+       "title": "AI shortcut Key4",
+       "shortName": "AIKey4"
+      },
+      {"name": "AI Key5",
+      "title": "AI shortcut Key5",
+      "shortName": "AIKey5"
+      },
+      {"name": "AI Key6",
+      "title": "AI shortcut Key6",
+      "shortName": "AIKey6"
+      },
+      {"name": "AI Key7",
+      "title": "AI shortcut Key7",
+      "shortName": "AIKey7"
+      },
+      {"name": "AI Key8",
+      "title": "AI shortcut Key8",
+      "shortName": "AIKey8"
+      },
+      {"name": "AI Key9",
+      "title": "AI shortcut Key9",
+      "shortName": "AIKey9"
+      },
+      {"name": "AI Key10",
+      "title": "AI shortcut Key10",
+      "shortName": "AIKey10"
+      },
+      {"name": "AI Key11",
+      "title": "AI shortcut Key11",
+      "shortName": "AIKey11"
+      },
+      {"name": "AI Key12",
+      "title": "AI shortcut Key120",
+      "shortName": "AIKey12"
+      }
     ],
 	"layouts": {
     "labels": [
       "Split Backspace",
       "Split Left Shift",
       "Right Shift",
-      "60% Layout"
+      "Arrow Keys"
     ],
 		"keymap": [
             [

@@ -2,11 +2,7 @@
   "name": "KB950 PRO",
   "vendorId": "0x54AB",
   "productId": "0xB950",
-  "firmware": {
-    "version": "1.0.0",
-    "file": [],
-    "masterBoot": ["0x54ab", "0xd950"]
-  },
+  "firmware": "0.0.0",
   "cdc": true,
   "screen": {
     "menus": ["video", "image", "slider"],
