@@ -433,6 +433,42 @@
         {"name": "Screen Right key",
          "title": "[TGI_RT] Screen Right key",
          "shortName": "TGI_RT"
+        },
+        {"name": "TRGB Toggle",
+         "title": "[TRGB_TOG] Rgblight Toggle",
+         "shortName": "TRGB_TOG"
+        },
+        {"name": "TRGB mode",
+         "title": "[TRGB_MOD] Rgblight mode",
+         "shortName": "TRGB_MOD"
+        },
+        {"name": "TRGB rmode",
+         "title": "[TRGB_RMOD] Rgblight rmode",
+         "shortName": "TRGB_RMOD"
+        },
+        {"name": "TRGB vai",
+         "title": "[TRGB_VAI] Rgblight val increase",
+         "shortName": "TRGB_VAI"
+        },
+        {"name": "TRGB vad",
+         "title": "[TRGB_VAD] Rgblight val decrease",
+         "shortName": "TRGB_VAD"
+        },
+        {"name": "TRGB hui",
+         "title": "[TRGB_HUI] Rgblight hue increase",
+         "shortName": "TRGB_HUI"
+        },
+        {"name": "TRGB hud",
+         "title": "[TRGB_HUD] Rgblight hue decrease",
+         "shortName": "TRGB_HUD"
+        },
+        {"name": "TRGB sai",
+         "title": "[TRGB_SAI] Rgblight sat increase",
+         "shortName": "TRGB_SAI"
+        },
+        {"name": "TRGB sad",
+         "title": "[TRGB_SAD] Rgblight sat decrease",
+         "shortName": "TRGB_SAD"
         }
     ],
 	"layouts": {
