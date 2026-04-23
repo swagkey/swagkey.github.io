@@ -165,22 +165,22 @@
                         {
                             "label": "Toggle N-key rollover",
                             "type": "toggle",
-                            "content": ["id_cp_magic_nkro", 19, 1]
+                            "content": ["id_magic_nkro", 19, 1]
                         },
                         {
                             "label": "Toggles the status of the GUI keys",
                             "type": "toggle",
-                            "content": ["id_cp_magic_gui", 19, 2]
+                            "content": ["id_magic_no_gui", 19, 2]
                         },
                         {
                             "label": "Toggle Alt and GUI swap on both sides",
                             "type": "toggle",
-                            "content": ["id_cp_magic_alt_gui", 19, 3]
+                            "content": ["id_magic_swap_alt_gui", 19, 3]
                         },
                         {
                             "label": "Treat Caps Lock as Control",
                             "type": "toggle",
-                            "content": ["id_cp_magic_caps_ctrl", 19, 4]
+                            "content": ["id_magic_caps_to_ctrl", 19, 4]
                         }
                     ]
                 },
@@ -294,17 +294,17 @@
                         {
                             "label": "Clear Settings",
                             "type": "toggle",
-                            "content": ["id_cp_eeprom_reset", 16, 2]
+                            "content": ["id_firmware_config_reset", 16, 2]
                         },
                         {
                             "label": "Reboot Keyboard",
                             "type": "toggle",
-                            "content": ["id_cp_kbd_reboot", 16, 3]
+                            "content": ["id_firmware_reboot", 16, 3]
                         },
                         {
                             "label": "Keyboard DFU",
                             "type": "toggle",
-                            "content": ["id_cp_kbd_dfu", 16, 1]
+                            "content": ["id_firmware_dfu", 16, 1]
                         }
                     ]
                 }
