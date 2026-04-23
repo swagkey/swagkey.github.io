@@ -207,11 +207,6 @@
                             "content": ["id_fe_standby_mode", 17, 2]
                         },
                         {
-                            "label": "Info LED",
-                            "type": "toggle",
-                            "content": ["id_cp_info_led", 17, 4]
-                        },
-                        {
                             "label": "Debounce Mode",
                             "type": "dropdown",
                             "options": [
@@ -225,17 +220,16 @@
                             "content": ["id_cp_debounce_mode", 17, 6]
                         },
                         {
-                            "label": "Debounce Delay (ms)",
+                            "label": "Debounce delay level",
                             "type": "dropdown",
                             "options": [
-                                ["1 ms", 1],
-                                ["2 ms", 2],
-                                ["3 ms", 3],
-                                ["4 ms", 4],
-                                ["5 ms", 5],
-                                ["6 ms", 6],
-                                ["7 ms", 7]
-                              ],
+                                ["Level 0", 1],
+                                ["Level 1", 10],
+                                ["Level 2", 13],
+                                ["Level 3", 17],
+                                ["Level 4", 20],
+                                ["Level 5", 25]
+                            ],
                             "content": ["id_cp_debounce", 17, 7]
                         },
                         {
