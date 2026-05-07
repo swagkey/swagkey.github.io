@@ -153,6 +153,130 @@
                         "content": ["id_qmk_rgblight_color", 2, 4]
                         }
                     ]
+                },
+                {
+                    "label": "Haptic",
+                    "content": [
+                        {
+                            "label": "Haptic toggle",
+                            "type": "toggle",
+                            "content": ["id_haptic_enable", 29, 1]
+                        },
+                        {
+                            "label": "Haptic effect",
+                            "type": "dropdown",
+                            "options": [
+                                ["TinyShock", 0],
+                                ["DriftSnug", 1],
+                                ["SnugDrift", 2],
+                                ["FloatWave", 3],
+                                ["UnfoldWrap", 4],
+                                ["WrapUnfold", 5],
+                                ["UnfoldWave", 6],
+                                ["SlipNuzzle", 7],
+                                ["NuzzleSlip", 8],
+                                ["SlipWave", 9],
+                                ["ExpandShrink", 10],
+                                ["ShrinkExpand", 11],
+                                ["ExpandWave", 12],
+                                ["CloudDrop", 13],
+                                ["CloudFloat", 14],
+                                ["CloudFluffy", 15],
+                                ["CalmBeat", 16],
+                                ["BeatCalm", 17],
+                                ["HeartTender", 18],
+                                ["OpenHug", 19],
+                                ["TightHug", 20],
+                                ["OpenLoop", 21],
+                                ["PounceHide", 22],
+                                ["HidePounce", 23],
+                                ["PokeABoo", 24],
+                                ["FluffyIn", 25],
+                                ["TightOut", 26],
+                                ["FluffyBounce", 27],
+                                ["HopTip", 28],
+                                ["TipHop", 29],
+                                ["BunnyBounce", 30],
+                                ["GlideCream", 31],
+                                ["GlideMousse", 32]
+                              ],
+                            "content": ["id_haptic_type", 29, 2]
+                        },
+                        {
+                            "showIf": "{id_haptic_type} == 0",
+                            "label": "Haptic duration",
+                            "type": "dropdown",
+                            "options": [
+                                ["Fastest", 0],
+                                ["Fast", 1],
+                                ["Normal", 2],
+                                ["Slow", 3]
+                              ],
+                            "content": ["id_haptic_duration", 29, 5]
+                        },
+                        {
+                            "showIf": "{id_haptic_type} > 0",
+                            "label": "Effect reversal",
+                            "type": "toggle",
+                            "content": ["id_haptic_reversal", 29, 6]
+                        },
+                        {
+                            "label": "Haptic amplitude",
+                            "type": "range",
+                            "options": [0, 100],
+                            "content": ["id_haptic_amplitude", 29, 3]
+                        },
+                        {
+                            "label": "Haptic feedback",
+                            "type": "dropdown",
+                            "options": [
+                                ["Key press", 0],
+                                ["Key press and release", 1],
+                                ["Key release", 2]
+                              ],
+                            "content": ["id_haptic_feedback", 29, 4]
+                        },
+                        {
+                            "label": "Haptic area alpha",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_alpha", 29, 16]
+                        },
+                        {
+                            "label": "Haptic area wasd [when alpha off]",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_wasd", 29, 17]
+                        },
+                        {
+                            "label": "Haptic area numeric",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_numeric", 29, 18]
+                        },
+                        {
+                            "label": "Haptic area fzone",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_fzone", 29, 19]
+                        },
+                        {
+                            "label": "Haptic area mod",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_mod", 29, 20]
+                        },
+                        {
+                            "label": "Haptic area punctuation",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_punctuation", 29, 21]
+                        },
+                        {
+                            "label": "Haptic area lockkeys",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_lockkeys", 29, 22]
+                        },
+                        {
+                            "label": "Haptic area navigation",
+                            "type": "toggle",
+                            "content": ["id_haptic_area_nav", 29, 23]
+                        }
+                    ]
                 }
             ]
         },
