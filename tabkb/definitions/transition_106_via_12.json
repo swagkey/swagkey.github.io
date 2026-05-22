@@ -188,6 +188,11 @@
                             "label": "Treat Caps Lock as Control",
                             "type": "toggle",
                             "content": ["id_magic_caps_to_ctrl", 19, 4]
+                        },
+		        {
+                            "label": "Numlock Invert",
+                            "type": "toggle",
+                            "content": ["id_extend_numlk_invert", 66, 32]
                         }
                     ]
                 },
