@@ -331,11 +331,6 @@
                             "content": ["id_fe_standby_mode", 17, 2]
                         },
                         {
-                            "label": "Info LED",
-                            "type": "toggle",
-                            "content": ["id_cp_info_led", 17, 4]
-                        },
-                        {
                             "label": "Debounce Mode",
                             "type": "dropdown",
                             "options": [
