@@ -123,7 +123,7 @@
               "content": ["id_cp_high_speed_mode", 17, 3]
             },
             {
-              "label": "Sleep Mode",
+              "label": "Standby Delay",
               "type": "dropdown",
               "options": [
                 ["Disable", 0],

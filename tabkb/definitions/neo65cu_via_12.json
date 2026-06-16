@@ -122,7 +122,7 @@
                           "content": ["id_cp_switch_number_f12", 24, 1]
                         },                        
                         {
-                            "label": "Sleep Mode",
+                            "label": "Standby Delay",
                             "type": "dropdown",
                             "options": [
                                 ["Disable", 0],

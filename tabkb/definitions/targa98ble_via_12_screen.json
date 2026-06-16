@@ -46,7 +46,7 @@
                             "content": ["id_cp_led_power_toggle", 17, 1]
                         },
                         {
-                            "label": "Sleep Mode",
+                            "label": "Standby Delay",
                             "type": "dropdown",
                             "options": [
                                 ["Disable", 0],

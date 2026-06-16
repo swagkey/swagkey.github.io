@@ -200,7 +200,7 @@
                             "content": ["id_cp_led_power_toggle", 17, 1]
                         },
                         {
-                            "label": "Sleep Mode / \u4f11\u7720\u65f6\u95f4\u6a21\u5f0f",
+                            "label": "Standby Delay / \u4f11\u7720\u65f6\u95f4\u6a21\u5f0f",
                             "type": "dropdown",
                             "options": [
                                 ["Disable", 0],
