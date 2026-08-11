@@ -69,7 +69,8 @@
                             "Spash",
                             "Multi Splash",
                             "Solid Splash",
-                            "Solid Multi Splash"
+                            "Solid Multi Splash",
+                            "EDITABLE_SOLID_COLOR"
                         ]
                         },
                         {
@@ -190,7 +191,7 @@
                         {
                             "label": "Light Power",
                             "type": "toggle",
-                            "content": ["id_cp_led_power_toggle", 17, 1]
+                            "content": ["id_fe_led_power_toggle", 17, 1]
                         },
                         {
                             "label": "Standby Delay",
@@ -217,7 +218,7 @@
                                 ["SYM_EAGER_PR", 4],
                                 ["ASYM_EAGER_DEFER_PK", 5]
                               ],
-                            "content": ["id_cp_debounce_mode", 17, 6]
+                            "content": ["id_fe_debounce_mode", 17, 6]
                         },
                         {
                             "label": "Debounce delay level",
@@ -230,21 +231,18 @@
                                 ["Level 4", 20],
                                 ["Level 5", 25]
                             ],
-                            "content": ["id_cp_debounce", 17, 7]
+                            "content": ["id_fe_debounce", 17, 7]
                         },
                         {
-                            "label": "Matrix scan frequency",
+                            "label": "USB polling rate",
                             "type": "dropdown",
                             "options": [
                                 ["8k", 0],
-                                ["6k", 1],
-                                ["5k", 2],
-                                ["4k", 3],
-                                ["3k", 5],
-                                ["2k", 10],
-                                ["1k", 22]
+                                ["4k", 1],
+                                ["2k", 2],
+                                ["1k", 3]
                               ],
-                            "content": ["id_cp_matrix_frequency", 17, 8]
+                            "content": ["id_fe_usb_interval", 17, 10]
                         }
                     ]
                 },
@@ -273,10 +271,10 @@
                     "label": "Connect",
                     "content":
                     [
-                        { "label": "Connect Mode",          "type": "dropdown", "options": [ ["USB", 0], ["Wireless 2.4G", 1], ["Bluetooth G1", 2], ["Bluetooth G2", 3], ["Bluetooth G3", 4] ], "content": ["id_cp_connect_mode", 18, 1] },
-                        { "label": "Delete current bound",  "type": "toggle",   "showIf": "{id_cp_connect_mode} > 0",   "content": ["id_cp_connect_bond_rest",   18, 3] },
-                        { "label": "Delete all bounds",     "type": "toggle",   "showIf": "{id_cp_connect_mode} > 1",   "content": ["id_cp_connect_bonds_clear", 18, 4] },
-                        { "label": "2.4G Receiver DFU",     "type": "toggle",   "showIf": "{id_cp_connect_mode} == 1",  "content": ["id_cp_connect_dfu",         18, 5] }
+                        { "label": "Connect Mode",          "type": "dropdown", "options": [ ["USB", 0], ["Wireless 2.4G", 1], ["Bluetooth G1", 2], ["Bluetooth G2", 3], ["Bluetooth G3", 4] ], "content": ["id_connect_mode", 18, 1] },
+                        { "label": "Delete current bound",  "type": "toggle",   "showIf": "{id_connect_mode} > 0",   "content": ["id_connect_bond_rest",   18, 3] },
+                        { "label": "Delete all bounds",     "type": "toggle",   "showIf": "{id_connect_mode} > 1",   "content": ["id_connect_bonds_clear", 18, 4] },
+                        { "label": "2.4G Receiver DFU",     "type": "toggle",   "showIf": "{id_connect_mode} == 1",  "content": ["id_connect_dfu",         18, 5] }
                     ]
                 },
                 {

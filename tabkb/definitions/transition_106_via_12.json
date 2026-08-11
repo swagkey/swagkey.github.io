@@ -69,7 +69,8 @@
                           "Spash",
                           "Multi Splash",
                           "Solid Splash",
-                          "Solid Multi Splash"
+                          "Solid Multi Splash",
+                          "EDITABLE_SOLID_COLOR"
                         ]
                       },
                       {
@@ -202,7 +203,7 @@
                         {
                             "label": "Light Power",
                             "type": "toggle",
-                            "content": ["id_cp_led_power_toggle", 17, 1]
+                            "content": ["id_fe_led_power_toggle", 17, 1]
                         },
                         {
                             "label": "Standby Delay",
@@ -229,7 +230,7 @@
                                 ["SYM_EAGER_PR", 4],
                                 ["ASYM_EAGER_DEFER_PK", 5]
                               ],
-                            "content": ["id_cp_debounce_mode", 17, 6]
+                            "content": ["id_fe_debounce_mode", 17, 6]
                         },
                         {
                             "label": "Debounce delay level",
@@ -242,21 +243,18 @@
                                 ["Level 4", 20],
                                 ["Level 5", 25]
                             ],
-                            "content": ["id_cp_debounce", 17, 7]
+                            "content": ["id_fe_debounce", 17, 7]
                         },
                         {
-                            "label": "Matrix scan frequency",
+                            "label": "USB polling rate",
                             "type": "dropdown",
                             "options": [
                                 ["8k", 0],
-                                ["6k", 1],
-                                ["5k", 2],
-                                ["4k", 3],
-                                ["3k", 5],
-                                ["2k", 10],
-                                ["1k", 22]
+                                ["4k", 1],
+                                ["2k", 2],
+                                ["1k", 3]
                               ],
-                            "content": ["id_cp_matrix_frequency", 17, 8]
+                            "content": ["id_fe_usb_interval", 17, 10]
                         }
                     ]
                 },
