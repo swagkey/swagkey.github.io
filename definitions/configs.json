@@ -240,6 +240,12 @@
     ]
   },
   {
+    "name": "Eave60 8k",
+    "vendorId": "0x534B",
+    "productId": "0x860B",
+    "firmware": "0.0.0"
+  },
+  {
     "name": "Eave65 mp8k",
     "vendorId": "0x534B",
     "productId": "0xA065",
